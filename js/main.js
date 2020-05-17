@@ -74,25 +74,50 @@ $(function ($) {
       $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
    });
 
-   /*Main Slideshow*/
-   $(".tw-slider-area").owlCarousel({
-      items: 1,
-      loop: true,
-      autoplay: true,
-      nav: true,
-      dots: false,
-      autoplayTimeout: 8000,
-      autoplayHoverPause: true,
-      mouseDrag: false,
-      touchDrag:true,
-      smartSpeed: 1100,
-      navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
-      responsive: {
-         1024: {
-            mouseDrag: true,
+   setTimeout(() => {
+
+      $(".tw-slider-area").owlCarousel({
+         items: 1,
+         loop: true,
+         autoplay: true,
+         // nav: false,//true
+         // dots: true,
+         // dotsEach:true,
+         autoplayTimeout: 8000,
+         autoplayHoverPause: false,
+         mouseDrag: false,
+         touchDrag: true,
+         smartSpeed: 1100,
+         // navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
+         responsive: {
+            1024: {
+               mouseDrag: true,
+            }
          }
-      }
-   });
+      });
+
+
+   }, 9500);
+   /*Main Slideshow*/
+   // $(".tw-slider-area").owlCarousel({
+   //    items: 1,
+   //    loop: true,
+   //    autoplay: true,
+   //    // nav: false,//true
+   //    // dots: true,
+   //    // dotsEach:true,
+   //    autoplayTimeout: 8000,
+   //    autoplayHoverPause: false,
+   //    mouseDrag: false,
+   //    touchDrag: true,
+   //    smartSpeed: 1100,
+   //    // navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
+   //    responsive: {
+   //       1024: {
+   //          mouseDrag: true,
+   //       }
+   //    }
+   // });
 
    /*Testimonial Slider*/
    $(".tw-testimonial-carousel").owlCarousel({
@@ -417,12 +442,12 @@ $(function ($) {
             $message = $form.find('.form-message');
 
          $.post(action, {
-               name: $name.val(),
-               phone: $phone.val(),
-               email: $email.val(),
-               subject: $subject.val(),
-               message: $message.val()
-            },
+            name: $name.val(),
+            phone: $phone.val(),
+            email: $email.val(),
+            subject: $subject.val(),
+            message: $message.val()
+         },
             function (data) {
                $error.html(data);
                $error.slideDown('slow');
