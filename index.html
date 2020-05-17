@@ -3,7 +3,6 @@
 
 
 <!-- Mirrored from demo.themewinter.com/html/seotime/multipage/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 May 2020 06:47:04 GMT -->
-
 <head>
    <!-- Basic Page Needs =====================================-->
    <meta charset="utf-8">
@@ -28,14 +27,12 @@
 
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
-   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
    <!-- Owl Carousel -->
    <link rel="stylesheet" href="css/owlcarousel.min.css" />
 
    <!-- Video Popup -->
-   <!-- <link rel="stylesheet" href="css/magnific-popup.css" /> -->
+   <link rel="stylesheet" href="css/magnific-popup.css" />
 
    <!--Style CSS -->
    <link rel="stylesheet" href="css/style.css">
@@ -51,301 +48,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
 
-
-
-   <style>
-      html {
-         /* font-family: sans-serif; */
-         /* scroll-snap-type: mandatory; */
-
-         /* this not working on safari */
-         scroll-behavior: smooth;
-         /* scroll-snap-points-y: repeat(100vh); */
-         scroll-snap-type: y mandatory;
-
-      }
-
-      /* Navigations */
-      /* div#navi {
-         width: 100%;
-         margin-left: auto;
-         margin-right: auto;
-         position: fixed;
-         top: 0;
-         z-index: 101;
-         color: #fff;
-         font-family: "tablet-gothic", sans-serif;
-         font-style: normal;
-         font-weight: 300;
-         -webkit-font-smoothing: antialiased;
-         -moz-osx-font-smoothing: grayscale;
-         text-transform: uppercase;
-         font-size: 14px;
-         margin-top: 50px;
-      } */
-
-      /* div#navi .centered {
-         max-width: 1180px;
-         width: 100%;
-      } */
-
-
-
-      .gradient-1 {
-         background-image: -webkit-linear-gradient(110deg, #31c8b1 10%, #4ec7ff 90%), url("images/background/diamond_upholstery.png");
-         background-image: -moz-linear-gradient(110deg, #31c8b1 10%, #4ec7ff 90%), url("images/background/diamond_upholstery.png");
-         background-image: -o-linear-gradient(110deg, #31c8b1 10%, #4ec7ff 90%), url("images/background/diamond_upholstery.png");
-         background-image: linear-gradient(110deg, #31c8b1 10%, #4ec7ff 90%), url("images/background/diamond_upholstery.png");
-         background-image: -ms-linear-gradient(110deg, #31c8b1 10%, #4ec7ff 90%);
-         /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-1, endColorstr=$combo-2, GradientType=1); */
-         background-blend-mode: multiply;
-         color: #fff;
-      }
-
-      .gradient-1.promo a {
-         color: #02afff
-      }
-
-      .gradient-1.promo a:hover {
-         color: #009ee7
-      }
-
-      .gradient-2 {
-         background-image: -webkit-linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
-         background-image: -moz-linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
-         background-image: -o-linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
-         background-image: linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
-         background-image: -ms-linear-gradient(110deg, #49C4A4 10%, #97b832 90%);
-         /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-3, endColorstr=$combo-4, GradientType=1); */
-         background-blend-mode: multiply;
-         color: #fff
-      }
-
-      .gradient-3 {
-         background-image: -webkit-linear-gradient(110deg, #38b6b8 10%, #d155ff 90%), url("images/background/diamond_upholstery.png");
-         background-image: -moz-linear-gradient(110deg, #38b6b8 10%, #d155ff 90%), url("images/background/diamond_upholstery.png");
-         background-image: -o-linear-gradient(110deg, #38b6b8 10%, #d155ff 90%), url("images/background/diamond_upholstery.png");
-         background-image: linear-gradient(110deg, #38b6b8 10%, #d155ff 90%), url("images/background/diamond_upholstery.png");
-         background-image: -ms-linear-gradient(left, #38b6b8, #d155ff);
-         /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-5, endColorstr=$combo-6, GradientType=1); */
-         background-blend-mode: multiply;
-         color: #fff
-      }
-
-      .gradient-4 {
-         background-image: -webkit-linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
-         background-image: -moz-linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
-         background-image: -o-linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
-         background-image: linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
-         background-image: -ms-linear-gradient(110deg, #d4b548 10%, #ff577b 90%);
-         /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-7, endColorstr=$combo-8, GradientType=1); */
-         background-blend-mode: multiply;
-         color: #fff
-      }
-
-      .gradient-5 {
-         background-image: -webkit-linear-gradient(110deg, #53c1d1 10%, #6370d7 90%), url("images/background/diamond_upholstery.png");
-         background-image: -moz-linear-gradient(110deg, #53c1d1 10%, #6370d7 90%), url("images/background/diamond_upholstery.png");
-         background-image: -o-linear-gradient(110deg, #53c1d1 10%, #6370d7 90%), url("images/background/diamond_upholstery.png");
-         background-image: linear-gradient(110deg, #53c1d1 10%, #6370d7 90%), url("images/background/diamond_upholstery.png");
-         background-image: -ms-linear-gradient(110deg, #53c1d1 10%, #6370d7 90%);
-         /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-9, endColorstr=$combo-10, GradientType=1); */
-         background-blend-mode: multiply;
-         color: #fff
-      }
-
-      .gradient-6 {
-         background-image: -webkit-linear-gradient(110deg, #e472dd 10%, #5b7ddf 90%), url("images/background/diamond_upholstery.png");
-         background-image: -moz-linear-gradient(110deg, #e472dd 10%, #5b7ddf 90%), url("images/background/diamond_upholstery.png");
-         background-image: -o-linear-gradient(110deg, #e472dd 10%, #5b7ddf 90%), url("images/background/diamond_upholstery.png");
-         background-image: linear-gradient(110deg, #e472dd 10%, #5b7ddf 90%), url("images/background/diamond_upholstery.png");
-         background-image: -ms-linear-gradient(110deg, #e472dd 10%, #5b7ddf 90%);
-         /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-11, endColorstr=$combo-12, GradientType=1); */
-         background-blend-mode: multiply;
-         color: #fff
-      }
-
-      .gradient-7 {
-         background-image: -webkit-linear-gradient(110deg, #42d3d8 10%, #3c69da 90%), url("images/background/diamond_upholstery.png");
-         background-image: -moz-linear-gradient(110deg, #42d3d8 10%, #3c69da 90%), url("images/background/diamond_upholstery.png");
-         background-image: -o-linear-gradient(110deg, #42d3d8 10%, #3c69da 90%), url("images/background/diamond_upholstery.png");
-         background-image: linear-gradient(110deg, #42d3d8 10%, #3c69da 90%), url("images/background/diamond_upholstery.png");
-         background-image: -ms-linear-gradient(110deg, #42d3d8 10%, #3c69da 90%);
-         /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-13, endColorstr=$combo-14, GradientType=1); */
-         background-blend-mode: multiply;
-         color: #fff
-      }
-
-      .gradient-8 {
-         background-image: -webkit-linear-gradient(110deg, #da59a5 10%, #754fa5 90%), url("images/background/diamond_upholstery.png");
-         background-image: -moz-linear-gradient(110deg, #da59a5 10%, #754fa5 90%), url("images/background/diamond_upholstery.png");
-         background-image: -o-linear-gradient(110deg, #da59a5 10%, #754fa5 90%), url("images/background/diamond_upholstery.png");
-         background-image: linear-gradient(110deg, #da59a5 10%, #754fa5 90%), url("images/background/diamond_upholstery.png");
-         background-image: -ms-linear-gradient(110deg, #da59a5 10%, #754fa5 90%);
-         /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-15, endColorstr=$combo-16, GradientType=1); */
-         background-blend-mode: multiply;
-         color: #fff
-      }
-
-      .gradient-9 {
-         background-image: -webkit-linear-gradient(110deg, #83C658 10%, #4FAA4E 90%), url("images/background/diamond_upholstery.png");
-         background-image: -moz-linear-gradient(110deg, #83C658 10%, #4FAA4E 90%), url("images/background/diamond_upholstery.png");
-         background-image: -o-linear-gradient(110deg, #83C658 10%, #4FAA4E 90%), url("images/background/diamond_upholstery.png");
-         background-image: linear-gradient(110deg, #83C658 10%, #4FAA4E 90%), url("images/background/diamond_upholstery.png");
-         background-image: -ms-linear-gradient(110deg, #83C658 10%, #4FAA4E 90%);
-         /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-17, endColorstr=$combo-18, GradientType=1); */
-         background-blend-mode: multiply;
-         color: #fff
-      }
-
-
-      #cw_logo {
-         position: relative;
-         z-index: 50;
-         pointer-events: none;
-         position: absolute;
-         top: 50%;
-         left: 50%;
-
-         -ms-transform: translate(-50%, -50%);
-         /* IE 9 */
-         -webkit-transform: translate(-50%, -50%);
-         /* Safari */
-         transform: translate(-50%, -50%);
-      }
-
-      div#logo_cw_line {
-         width: 128px;
-         height: 121px;
-         text-align: center;
-         z-index: 100;
-         /* visibility: hidden; */
-
-         position: fixed;
-         top: 10%;
-         left: 50%;
-
-         -ms-transform: translate(-50%, -50%);
-         /* IE 9 */
-         -webkit-transform: translate(-50%, -50%);
-         /* Safari */
-         transform: translate(-50%, -50%);
-         /*pointer-events: none;*/
-
-         /*-ms-transform:scale(0.85,0.85);
-     -webkit-transform: scale(0.85,0.85);
-     transform:scale(0.85,0.85);*/
-
-      }
-
-      @media screen and (min-width: 767px) {
-
-         div#navi #part1,
-         div#navi #part2 {
-            max-width: 44.6%;
-            width: 100%;
-            clear: none;
-            display: inline-block;
-            /* margin-left: -10px; */
-         }
-
-         div#navi #part1 {
-            float: left;
-         }
-
-         div#navi #part2 {
-            float: right;
-         }
-
-         /* div#navi #part1 div,
-      div#navi #part2 div {
-         clear: none;
-         display: inline-block;
-      } */
-
-         div#navi #part1 div {
-            float: right;
-         }
-
-
-
-
-
-         div#navi #part2 div {
-            float: left;
-         }
-
-
-
-
-         .section {
-            min-height: 800px;
-            position: relative;
-            text-align: center;
-            font-family: sans-serif, arial;
-            margin: 0;
-            scroll-snap-align: start;
-         }
-
-         .nav {
-            display: block;
-            position: fixed;
-            /*left: 50%;*/
-            width: 100%;
-            top: 36px;
-            z-index: 9;
-            padding-left: 10px;
-         }
-
-         .nav a {
-            padding: 7px 20px;
-            border-radius: 7px;
-            margin-right: 10px;
-            /* background: rgba(255, 255, 255, 0.5); */
-            -webkit-transition: all 0.2s ease-out;
-            -moz-transition: all 0.2s ease-out;
-            -ms-transition: all 0.2s ease-out;
-            -o-transition: all 0.2s ease-out;
-            transition: all 0.2s ease-out;
-            text-decoration: none;
-            /* color: black; */
-            font-family: inherit;
-            /* font-weight: 100; */
-            font-size: large;
-         }
-
-         .nav a.active {
-            text-decoration: underline;
-            /* background: rgba(0, 0, 0, 0.5); */
-            /* color: white; */
-         }
-
-         .nav a:hover {
-            background: rgba(0, 0, 0, 0.2);
-         }
-
-         #mobile_head {
-            visibility: hidden;
-         }
-      }
-
-
-
-
-      @media screen and (max-width: 767px) {
-
-         #navi {
-            display: none;
-         }
-
-         #mobile_head {
-            visibility: visible;
-
-         }
-      }
-   </style>
-
-   <!-- <link rel="stylesheet" href="css/abcd.css"> -->
+      <!-- <link rel="stylesheet" href="new/index.css"> -->
 </head>
 
 <body>
@@ -367,139 +70,350 @@
                   <span> <i class="icon icon-envelope"></i> info@example.com</span>
                   <span><i class="icon icon-phone3"></i> 314-326-2990</span>
                </div>
-            </div> -->
-   <!-- Col End -->
-   <!-- <div class="col-md-4 ml-auto text-right">
+            </div>
+            Col End
+            <div class="col-md-4 ml-auto text-right">
                <div class="top-social-links">
                   <span>Follow us:</span>
                   <a href="#"><i class="fa fa-facebook"></i></a>
                   <a href="#"><i class="fa fa-twitter"></i></a>
                   <a href="#"><i class="fa fa-google-plus"></i></a>
                </div>
-            </div> -->
-   <!-- Col End -->
-   <!-- </div> -->
-   <!-- Row End -->
-   <!-- </div> -->
-   <!-- Container End -->
-   <!-- </div> -->
+            </div>
+            Col End
+         </div>
+         Row End
+      </div>
+       Container End 
+   </div> -->
    <!-- Top Bar end -->
 
    <!-- header======================-->
    <header>
-      <!-- <div class="nav">
-         <nav id="mymenu">
-            <a class="test1" href="#section11">Link to section 1</a>
-            <a class="test1" href="#tw-features">Link to section 2</a>
-            <a class="test1" href="#tw-intro">Link to section 3</a>
-            <a class="test1" href="#tw-service">Link to section 4</a>
-         </nav>
-      </div> -->
+      <div class="tw-head">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+               <a class="navbar-brand tw-nav-brand" href="index.html">
+                  <img src="images/logo/logo.png" alt="seotime">
+               </a>
+               <!-- End of Navbar Brand -->
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <!-- End of Navbar toggler -->
+               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                     
 
-      <div id="mobile_head" class="fixed-top pos-f-t">
-         <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-               <h5 class="text-white h4">SEO</h5>
-               <table class="table table-sm">
-                  <tbody>
-                     <tr>
-                        <td><a class="nava" href="#tw-features">Features</a></td>
-                        <td><a class="nava" href="#tw-case">Studies</a></td>
-                     </tr>
-                     <tr>
-                        <td><a class="nava" href="#tw-intro">Problems</a></td>
-                        <td><a class="nava" href="#tw-pricing">Price</a></td>
-                     </tr>
-                     <tr>
-                        <td><a class="nava" href="#tw-service">Services</a></td>
-                        <td><a class="nava" href="#tw-blog">News</a></td>
-                     </tr>
-                     <tr>
-                        <td><a class="nava" href="#work-process">Working</a></td>
-                        <td><a class="nava" href="#tw-footer">Footer</a></td>
-                     </tr>
-                  </tbody>
-               </table>
-               <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
-            </div>
+<!-- ========================================================================================================================================================= -->
+
+       <!-- <li class="nav-item dropdown">
+         <a class="nav-link" href="#" data-toggle="dropdown">
+            testing
+            <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+         </a>
+         
+         <ul class="dropdown-menu tw-dropdown-menu" >
+           <li><a  href="#">Action</a></li>
+           <li><a  href="#">Another action</a></li>
+           <li class="one">
+             <a  href="#"data-toggle="dropdown" >Submenu
+               <span class="tw-indicator"><i class="fa fa-angle-right"></i></span>
+             </a>
+             <ul class="dropdown-menu tw-dropdown-menus">
+               <li><a href="#" class="dropdown-item">Submenu action</a></li>
+               <li><a href="#" class="dropdown-item">Another submenu action</a></li>
+ 
+               <li class="one">
+                 <a class="dropdown-item dropdown-toggle" href="#">Subsubmenu
+                  <span class="tw-indicator"><i class="fa fa-angle-right"></i></span>
+                 </a>
+                 <ul class="dropdown-menu tw-dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
+                   <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                 </ul>
+               </li>
+               <li class="one">
+                 <a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
+                 <ul class="dropdown-menu tw-dropdown-menu">
+                   <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
+                   <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                 </ul>
+               </li>
+ 
+ 
+ 
+             </ul>
+           </li>
+         </ul>
+       </li> -->
+    
+
+
+<!-- ========================================================================================================================================================= -->
+
+                     <li class="nav-item"><a class="nav-link" href="index.html">Home </a></li>
+                     <!-- <li class="nav-item dropdown active">
+                        <a class="nav-link" href="#" data-toggle="dropdown">
+                           Home
+                           <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu tw-dropdown-menu">
+                           <li class="active"><a href="index.html">Home One</a></li>
+                           <li><a href="index-2.html">Home Two</a></li>
+                        </ul> -->
+                        <!-- End of Dropdown menu -->
+                     <!-- </li> -->
+                     <li class="nav-item"><a class="nav-link" href="#">User App </a></li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown">
+                           Our Services
+                           <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+                        </a>
+                        
+                        <ul class="dropdown-menu tw-dropdown-menu" >
+                          
+                          <li style="width: 188px;" class="one">
+                            <a  href="#"data-toggle="dropdown" >Marketing
+                              <span class="tw-indicator">
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 <i class="fa fa-angle-right"></i></span>
+                            </a>
+                            <ul class="dropdown-menu tw-dropdown-menus">
+                              
+                              <li class="one">
+                                <a class="dropdown-item dropdown-toggle" href="#">spot Offer App
+                                 <span class="tw-indicator">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <i class="fa fa-angle-right"></i></span>
+                                </a>
+                                
+                                <ul style="width: 330px;" class="dropdown-menu tw-dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Deliver Dynamic Offers & <br>
+                                     Promotions </a></li>
+                                  <li><a class="dropdown-item" href="#">Intelligent Statistics</a></li>
+                                  <li><a class="dropdown-item" href="#">Real Time edits</a></li>
+                                  <li><a class="dropdown-item" href="#">Get discovered</a></li>
+                                  <li><a class="dropdown-item" href="#">Approve / Reject leads</a></li>
+                                  <li><a class="dropdown-item" href="#">Get store followers</a></li>
+                                  <li><a class="dropdown-item" href="#">Get more leads via price request <br> from users</a></li>
+                                  <li><a class="dropdown-item" href="#">Better Branding</a></li>
+                                  <li><a class="dropdown-item" href="#">Loyalty Offers to attract <br> repeat customers</a></li>
+                                  <li><a class="dropdown-item" href="#">One click chat
+                                    Social Media <br> integration for larger reach</a></li>
+                                </ul>
+                              
+                              </li>
+                              <li><a href="#" class="dropdown-item">Lead Generation</a></li>
+                              <li><a href="#" class="dropdown-item">Social Media Marketing</a></li>
+                              <li><a href="#" class="dropdown-item">PPC</a></li>
+                              <li><a href="#" class="dropdown-item">Growth Hacking</a></li>
+                              <li><a href="#" class="dropdown-item">Web Analytics</a></li>
+                              <li><a href="#" class="dropdown-item">SEO</a></li>
+                              <li><a href="#" class="dropdown-item">SMS Marketing</a></li>
+                              <li><a href="#" class="dropdown-item">GMBT</a></li>
+                
+                              <!-- <li class="one">
+                                <a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
+                                <ul class="dropdown-menu tw-dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                                </ul>
+                              </li> -->
+                
+                
+                
+                            </ul>
+                          </li>
+                          <li><a  href="#">Strategy</a></li>
+                          <li><a  href="#">Design</a></li>
+                          <li><a  href="#">Development</a></li>
+                        </ul>
+                      </li>
+                        <!-- <ul class="dropdown-menu tw-dropdown-menu">
+                           <li><a href="about-us.html">About Us</a></li>
+                           <li><a href="team.html">Our Team</a></li>
+                           <li><a href="testimonial.html">Testimonial</a></li>
+                           <li><a href="faq.html">FAQ</a></li>
+                           <li><a href="contact.html">Contact</a></li>
+                           <li><a href="404.html">404</a></li>
+                        </ul> -->
+                        <!-- End of Dropdown menu -->
+                     <!-- </li> -->
+                     <!-- End Dropdown -->            
+                     <!-- <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown">
+                           Our Services
+                           <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu tw-dropdown-menu">
+                           <li><a href="#">Marketing</a></li>
+
+                           <li><a href="strategy.html">Strategy</a></li>
+                           <li><a href="design.html">Design</a></li>
+                           <li><a href="development.html">Development</a></li>
+                        </ul> -->
+                        <!-- End of Dropdown menu -->
+                     <!-- </li> -->
+                     
+                     <!-- End Dropdown -->
+                     <!-- <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown">
+                           Industries
+                           <span class="tw-indicator"><i class="fa fa-angle-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu tw-dropdown-menu">
+                           <li><a href="#">Marketing</a></li>
+                           <li><a href="strategy.html">Strategy</a></li>
+                           <li><a href="design.html">Design</a></li>
+                           <li><a href="development.html">Development</a></li>
+                        </ul> -->
+                        <!-- End of Dropdown menu -->
+                     <!-- </li> -->
+                     <!-- End Dropdown -->
+                     <li class="nav-item dropdown tw-megamenu-wrapper">
+                        <a class="nav-link" href="#" data-toggle="dropdown">
+                           Industries
+                           <span class="tw-indicator">
+                              <i class="fa fa-angle-down"></i>
+                           </span>
+                        </a>
+                        <div id="tw-megamenu" class="dropdown-menu tw-mega-menu">
+                           <div class="row">
+                              <div class="col-md-12 col-lg-3 no-padding">
+                                 <ul>
+                                    <!-- <li class="tw-megamenu-title"> -->
+                                       <!-- <h3>Addons List One</h3> -->
+                                    <!-- </li> -->
+                                    <li>Food & Beverages</li>
+                                    <li>Beauty</li>
+                                    <li>Fashion</li>
+                                    <li>Travel</li>
+                                 </ul>
+                                 <!-- End UL -->
+                              </div>
+                              <!-- End Col -->
+                              <div class="col-md-12 col-lg-3 no-padding">
+                                 <ul>
+                                    <!-- <li class="tw-megamenu-title">
+                                       <h3>Addons List Two</h3>
+                                    </li> -->
+                                    <li>Consumer Electronics</li>
+                                    <li>Fitness</li>
+                                    <li>Pets</li>
+                                    <li>Repairs</li>
+                                 </ul>
+                                 <!-- End UL -->
+                              </div>
+                              <!-- End Col -->
+                              <div class="col-md-12 col-lg-3 no-padding">
+                                 <ul>
+                                    <!-- <li class="tw-megamenu-title">
+                                       <h3>Useful links</h3>
+                                    </li> -->
+                                    <li>Services</li>
+                                    <li>Real Estate</li>
+                                    <li>Disital marketing</li>
+                                    <li>Education</li>
+                                 </ul>
+                                 <!-- End Ul -->
+                              </div>
+                              <!-- End Col -->
+                              <div class="col-md-12 col-lg-3 megamenu-img">
+                                 <img src="images/menu_img.png" alt="" class="img-fluid">
+                              </div>
+                              <!-- End Col -->
+                           </div>
+                           <!-- End Row -->
+                        </div>
+                        <!-- End of Mega menu -->
+                     </li>
+                     <!-- End MegaMenu -->
+                     
+                        <!-- <div id="tw-megamenu" class="dropdown-menu tw-mega-menu">
+                           <div class="row"> -->
+                              <!-- <div class="col-md-12 col-lg-3 no-padding"> -->
+                                 <!-- <ul>
+                                    <li class="tw-megamenu-title">
+                                       <h3>Addons List One</h3>
+                                    </li>
+                                    <li><a href="#">SEO Pricing</a></li>
+                                    <li><a href="#">Ecommerce SEO</a></li>
+                                    <li><a href="#">Enterprise SEO</a></li>
+                                    <li><a href="#">Local SEO</a></li>
+                                 </ul> -->
+                                 <!-- End UL -->
+                              <!-- </div> -->
+                              <!-- End Col -->
+                              <!-- <div class="col-md-12 col-lg-3 no-padding"> -->
+                                 <!-- <ul>
+                                    <li class="tw-megamenu-title">
+                                       <h3>Addons List Two</h3>
+                                    </li>
+                                    <li><a href="#">Addon list 1</a></li>
+                                    <li><a href="#">Addon list 2</a></li>
+                                    <li><a href="#">Addon list 3</a></li>
+                                    <li><a href="#">Addon list 4</a></li>
+                                 </ul> -->
+                                 <!-- End UL -->
+                              <!-- </div> -->
+                              <!-- End Col -->
+                              <!-- <div class="col-md-12 col-lg-3 no-padding">
+                                 <ul>
+                                    <li class="tw-megamenu-title">
+                                       <h3>Useful links</h3>
+                                    </li>
+                                    <li><a href="#">Search Engine</a></li>
+                                    <li><a href="#">Data analysis</a></li>
+                                    <li><a href="#">Disital marketing</a></li>
+                                    <li><a href="#">Social Marketing</a></li>
+                                 </ul> -->
+                                 <!-- End Ul -->
+                              <!-- </div> -->
+                              <!-- End Col -->
+                              <!-- <div class="col-md-12 col-lg-3 megamenu-img">
+                                 <img src="images/menu_img.png" alt="" class="img-fluid">
+                              </div> -->
+                              <!-- End Col -->
+                           <!-- </div> -->
+                           <!-- End Row -->
+                        <!-- </div> -->
+                        <!-- End of Mega menu -->
+                     <!-- </li> -->
+                     <!-- End MegaMenu -->
+                     <li class="nav-item"><a class="nav-link" href="app_tech.html">App Technology</a></li>
+                     <li class="nav-item"><a class="nav-link" href="contact.html">Blog</a></li>
+                     <li class="nav-item"><a class="nav-link" href="contact.html">About us</a></li>
+                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  </ul>
+                  <!-- End Navbar Nav -->
+                  <div class="tw-off-search d-none d-lg-inline-block">
+                     <div class="tw-search">
+                        <i class="icon icon-search"></i>
+                     </div>
+                  </div>
+                  <!-- End off canvas menu -->
+               </div>
+               <!-- End of navbar collapse -->
+            </nav>
+            <!-- End of Nav -->
          </div>
-         <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-               data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-               aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-         </nav>
+         <!-- End of Container -->
       </div>
-
-
-
-      <a href="#">
-         <div id="logo_cw_line">
-            <img height="80px" src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="">
-         </div>
-      </a>
-
-      <!-- navi -->
-      <div id="navi">
-         <!-- class="navbar navbar-expand-lg navbar-light bg-white" -->
-         <div id="mymenu" class="nav">
-
-            <div id="part1">
-               <div class="n1">
-                  <div class="txt"><a class="nava" href="#work-process">Working</a></div>
-                  <hr>
-               </div>
-               <div class="n2">
-                  <div class="txt"><a class="nava" href="#tw-service">Services</a></div>
-                  <hr>
-               </div>
-               <div class="n3">
-                  <div class="txt"><a class="nava" href="#tw-intro">Problems</a></div>
-                  <hr>
-               </div>
-               <div class="n1">
-                  <div class="txt"><a class="nava" href="#tw-features">Features</a></div>
-                  <hr>
-               </div>
-            </div>
-
-            <div id="part2">
-               <div class="n4">
-                  <div class="txt"><a class="nava" href="#tw-case">Studies</a></div>
-                  <hr>
-               </div>
-               <div class="n5">
-                  <div class="txt"><a class="nava" href="#tw-pricing">Price</a></div>
-                  <hr>
-               </div>
-               <div class="n6">
-                  <div class="txt"><a class="nava" href="#tw-blog">News</a></div>
-                  <hr>
-               </div>
-               <div class="n6">
-                  <div class="txt"><a class="nava" href="#tw-footer">Footer</a></div>
-                  <hr>
-               </div>
-            </div>
-
-         </div>
-      </div>
+      <!-- End tw head -->
    </header>
    <!-- End of Header area -->
 
-   <div id="section11" data-color="#dee2e6" class="section tw-slider-area owl-carousel gradient-1">
+   <div class="tw-slider-area bg-white owl-carousel ">
       <div class="slider-items">
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-6">
                   <div class="slider-content">
-                     <h1> Digital <span>Marketing</span> Drives Result </h1>
-                     <p class="slider-desc">Start working with an company that provide every thing you need to
-                        generate
-                        awareness, drive traffic,
-                        connect with customers, and increase.</p>
-                     <a href="#" class="btn btn-primary">Free Analysis</a>
+                     <h1> Overcome <span>COVID-19</span>  business scare and fight the Recession. </h1>
+                     <p class="slider-desc">Are you worried about your business post Coronavirus Lock Down? Don’t let Coronavirus Lock your business Down. Let us help you!</p>
+                     <a href="#" class="btn btn-primary">Request free Consultation</a>
                   </div>
                   <!-- Slider Content End -->
                </div>
@@ -512,8 +426,72 @@
          </div>
          <!-- Container End -->
       </div>
-      <!-- 1st Slider -->
+      <!-- #3 slider -->
+      <div class="slider-items ">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-6">
+                  <div class="slider-content">
+                     <h1>Get More <span>Customer</span>  Visits! </h1>
+                     <p class="slider-desc">Increase your sales by attracting new & repeat customers to your stores</p>
+                     <a href="#" class="btn btn-primary">Request free Consultation</a>
+                  </div>
+                  <!-- Slider Content End -->
+               </div>
+               <!-- Col End -->
+               <div class="col-md-6">
+                  <img src="images/slider/slider1.png" alt="" class="img-fluid">
+               </div>
+            </div>
+            <!-- Row ENd -->
+         </div>
+         <!-- Container End -->
+      </div>
+      <!-- #4 slider -->
       <div class="slider-items">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-6">
+                  <div class="slider-content">
+                     <h1> Guaranteed <span>Lead</span>  service!</h1>
+                     <p class="slider-desc">See your business soar with our Guaranteed Lead service</p>
+                     <a href="#" class="btn btn-primary">Request free Consultation</a>
+                  </div>
+                  <!-- Slider Content End -->
+               </div>
+               <!-- Col End -->
+               <div class="col-md-6">
+                  <img src="images/slider/slider1.png" alt="" class="img-fluid">
+               </div>
+            </div>
+            <!-- Row ENd -->
+         </div>
+         <!-- Container End -->
+      </div>
+      <!-- #8 slider -->
+      <div class="slider-items">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-md-6">
+                  <div class="slider-content">
+                     <h1> Adapt <span>new technology</span>  & stay ahead! </h1>
+                     <p class="slider-desc">In today's digital age investing in new technology keeps you ahead of competition. With Spot Offers you always get a Head Start</p>
+                     <a href="#" class="btn btn-primary">Request free Consultation</a>
+                  </div>
+                  <!-- Slider Content End -->
+               </div>
+               <!-- Col End -->
+               <div class="col-md-6">
+                  <img src="images/slider/slider1.png" alt="" class="img-fluid">
+               </div>
+            </div>
+            <!-- Row ENd -->
+         </div>
+         <!-- Container End -->
+      </div>
+<br>
+      <!-- 1st Slider -->
+      <!-- <div class="slider-items bg-orange">
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-6">
@@ -522,25 +500,25 @@
                <div class="col-md-6">
                   <div class="slider-content slide-text-right">
                      <h1> Online <span>Marketing</span> Solutions </h1>
-                     <p class="slider-desc">Start working with an company that provide every thing you need to
-                        generate
-                        awareness, drive traffic,
+                     <p class="slider-desc">Start working with an company that provide every thing you need to generate awareness, drive traffic,
                         connect with customers, and increase.</p>
                      <a href="#" class="btn btn-primary">Free Analysis</a>
                   </div>
-                  <!-- Slider Content End -->
-               </div>
+                   Slider Content End -->
+               <!-- </div> -->
                <!-- Col End -->
-            </div>
+            <!-- </div> -->
             <!-- Row ENd -->
-         </div>
+         <!-- </div> -->
          <!-- Container End -->
-      </div>
+      <!-- </div> --> 
       <!-- 1st Slider -->
    </div>
    <!-- Slider Area End -->
 
-   <section id="tw-features" data-color="#00ff89" class="section tw-features-area gradient-2">
+<!-- 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+
+   <section id="tw-features" class="tw-features-area">
       <div class="container">
          <div class="row text-center">
             <div class="col section-heading wow fadeInDown">
@@ -549,105 +527,160 @@
                   Our Best
                   <span>Features</span>
                </h2>
-            </div>
+            </div> -->
             <!-- Title Col End -->
-         </div>
+         <!-- </div> -->
          <!-- Title Row End -->
-         <div class="row">
+         <!-- <div class="row">
             <div class="col-lg-4 col-md-12 text-md-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
                <div class="features-box">
                   <div class="features-icon d-table">
                      <div class="features-icon-inner d-table-cell">
                         <img src="images/icon/feature1.png" alt="">
-                     </div>
+                     </div> -->
                      <!-- End Features icon inner -->
-                  </div>
+                  <!-- </div> -->
                   <!-- End Features Icon -->
-                  <h3>Quality Service Provide</h3>
+                  <!-- <h3>Quality Service Provide</h3>
                   <p>Internet marketing SEO company offering innovativ marketing</p>
                   <a href="#" class="tw-readmore">Read More
                      <i class="fa fa-angle-right"></i>
                   </a>
-               </div>
+               </div> -->
                <!-- End Single Features -->
-            </div>
+            <!-- </div> -->
             <!-- Col End -->
-            <div class="col-lg-4 col-md-12  wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".4s">
+            <!-- <div class="col-lg-4 col-md-12  wow fadeInUp" data-wow-duration="1.6s" data-wow-delay=".4s">
                <div class="features-box">
                   <div class="features-icon d-table">
                      <div class="features-icon-inner d-table-cell">
                         <img src="images/icon/feature2.png" alt="">
-                     </div>
+                     </div> -->
                      <!-- End Features Icon inner -->
-                  </div>
+                  <!-- </div> -->
                   <!-- End Features Icon -->
-                  <h3>Professional Marketing </h3>
+                  <!-- <h3>Professional Marketing </h3>
                   <p>Internet marketing SEO company offering innovativ marketing</p>
                   <a href="#" class="tw-readmore">Read More
                      <i class="fa fa-angle-right"></i>
                   </a>
-               </div>
+               </div> -->
                <!-- End Single Features -->
-            </div>
+            <!-- </div> -->
             <!-- end col -->
-            <div class="col-lg-4 col-md-12  wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".6s">
+            <!-- <div class="col-lg-4 col-md-12  wow fadeInUp" data-wow-duration="1.9s" data-wow-delay=".6s">
                <div class="features-box">
                   <div class="features-icon d-table">
                      <div class="features-icon-inner d-table-cell">
                         <img src="images/icon/feature3.png" alt="">
-                     </div>
+                     </div> -->
                      <!-- End Features Icon inner -->
-                  </div>
+                  <!-- </div> -->
                   <!-- End Features Icon -->
-                  <h3>More Traffic &amp; Sales</h3>
+                  <!-- <h3>More Traffic &amp; Sales</h3>
                   <p>Internet marketing SEO company offering innovativ marketing</p>
                   <a href="#" class="tw-readmore">Read More
                      <i class="fa fa-angle-right"></i>
                   </a>
-               </div>
+               </div> -->
                <!-- End Single Features -->
-            </div>
+            <!-- </div> -->
             <!-- End col -->
-         </div>
+         <!-- </div> -->
          <!-- End Row 2 -->
-      </div>
+      <!-- </div> -->
       <!-- End Container -->
-   </section>
+   <!-- </section> -->
    <!-- End Features section -->
 
+   <!-- <section id="tw-facts" class="tw-facts bg-overlay">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3 text-center">
+               <div class="tw-facts-box">
+                  <div class="facts-content wow fadeInUp" data-wow-duration="1s">
+                     <span class="counter">200</span>
+                     <sup>+</sup>
+                     <h4 class="facts-title">Active clients</h4>
+                  </div> -->
+                  <!-- Facts Content End -->
+               <!-- </div> -->
+               <!-- Facts Box End -->
+            <!-- </div> -->
+            <!-- Col End -->
+            <!-- <div class="col-md-3 text-center">
+               <div class="tw-facts-box">
+                  <div class="facts-content wow slideInUp">
+                     <span class="counter">570</span>
+                     <sup>+</sup>
+                     <h4 class="facts-title">Projects Done</h4>
+                  </div> -->
+                  <!-- End Facts Content -->
+               <!-- </div> -->
+               <!-- End Facts Box -->
+            <!-- </div> -->
+            <!-- Col End -->
+            <!-- <div class="col-md-3 text-center">
+               <div class="tw-facts-box">
+                  <div class="facts-content wow slideInUp">
+                     <span class="counter">98</span>
+                     <sup>%</sup>
+                     <h4 class="facts-title">Success Rate</h4> -->
+                  <!-- </div> -->
+                  <!-- End Facts Content -->
+               <!-- </div> -->
+               <!-- End Facts Box -->
+            <!-- </div> -->
+            <!-- Col End -->
+            <!-- <div class="col-md-3 text-center">
+               <div class="tw-facts-box">
+                  <div class="facts-content wow slideInUp">
+                     <span class="counter">50</span>
+                     <sup>+</sup>
+                     <h4 class="facts-title">Awards</h4>
+                  </div> -->
+                  <!-- End Facts Content -->
+               <!-- </div> -->
+               <!-- End Facts Box -->
+            <!-- </div> -->
+            <!-- Col End -->
+         <!-- </div> -->
+         <!-- Row End -->
+      <!-- </div> -->
+      <!-- Container End -->
+   <!-- </section> -->
    <!-- Facts End -->
 
-   <section id="tw-intro" data-color="#ffc107" class="section tw-intro-area gradient-3">
+   <!-- <section id="tw-intro" class="tw-intro-area">
       <div class="container">
          <div class="row">
             <div class="col-lg-6 col-md-12 wow fadeInRight" data-wow-duration="1s">
                <h2 class="column-title">We Solve <span>Online Marketing</span> Problems</h2>
                <p>
-                  Internet marketing SEO company offering innovati marketing solution to mid to large size companies
-                  across the globe. As a
+                  Internet marketing SEO company offering innovati marketing solution to mid to large size companies across the globe. As a
                   leader in SEO, web design. ecommerce, website conversion.
                </p>
                <ul class="intro-list">
                   <li>Internet marketing SEO company offering innovative designs</li>
                   <li>Marketing generate awareness, drive traffic, connect with</li>
-               </ul>
-               <a href="#" class="btn btn-primary">learn more</a>
+               </ul> -->
+               <!-- <a href="#" class="btn btn-primary">learn more</a> -->
                <!-- Default Round Btn -->
-               <a href="#" class="btn btn-secondary">contact us</a>
-            </div>
+               <!-- <a href="#" class="btn btn-secondary">contact us</a>
+            </div> -->
             <!-- End Col -->
-            <div class="col-lg-6 col-md-12 text-lg-right text-md-center wow fadeInLeft" data-wow-duration="1s">
+            <!-- <div class="col-lg-6 col-md-12 text-lg-right text-md-center wow fadeInLeft" data-wow-duration="1s">
                <img src="images/about/about_image.png" alt="" class="img-fluid">
-            </div>
+            </div> -->
             <!-- End Col -->
-         </div>
+         <!-- </div> -->
          <!-- End Row -->
-      </div>
+      <!-- </div> -->
       <!-- End Container -->
-   </section>
+   <!-- </section> -->
    <!-- Intro section End -->
 
-   <section id="tw-service" data-color="#333" class="section tw-service bg-lightgray gradient-4">
+   <!-- <section id="tw-service" class="tw-service bg-lightgray">
       <div class="container">
          <div class="row text-center">
             <div class="col section-heading wow fadeInDown">
@@ -655,66 +688,65 @@
                   <small>Our features</small>
                   Our Best <span>Services</span>
                </h2>
-            </div>
+            </div> -->
             <!-- Title Col End -->
-         </div>
+         <!-- </div> -->
          <!-- Title Row End -->
-         <div class="row">
+         <!-- <div class="row">
             <div class="col-md-4">
                <div class="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
                   <div class="service-icon service-icon-bg-1 d-table">
                      <div class="service-icon-inner d-table-cell">
                         <img src="images/icon/service1.png" alt="search engine" class="img-fluid">
                      </div>
-                  </div>
+                  </div> -->
                   <!-- Service icon end -->
-                  <div class="service-content">
+                  <!-- <div class="service-content">
                      <h3>Search Engine Optimization</h3>
-                     <p>Internet marketing company offering innovativ marketing solutions to mid to large size
-                        companies.</p>
-                  </div>
+                     <p>Internet marketing company offering innovativ marketing solutions to mid to large size companies.</p> -->
+                  <!-- </div> -->
                   <!-- Service Content end -->
-               </div>
+               <!-- </div> -->
                <!-- Service box end -->
-            </div>
+            <!-- </div> -->
             <!-- Col End -->
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                <div class="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
                   <div class="service-icon service-icon-bg-2 d-table">
                      <div class="service-icon-inner d-table-cell">
                         <img src="images/icon/service2.png" alt="search engine" class="img-fluid">
                      </div>
-                  </div>
+                  </div> -->
                   <!-- Service icon end -->
-                  <div class="service-content">
+                  <!-- <div class="service-content">
                      <h3>Content Marketing</h3>
                      <p>One of the top 100 advertising and marketing agencies knows what it means to be</p>
-                  </div>
+                  </div> -->
                   <!-- Service content end -->
-               </div>
+               <!-- </div> -->
                <!-- Service box End -->
-            </div>
+            <!-- </div> -->
             <!-- Col End -->
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                <div class="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
                   <div class="service-icon service-icon-bg-3 d-table">
                      <div class="service-icon-inner d-table-cell">
                         <img src="images/icon/service3.png" alt="search engine" class="img-fluid">
                      </div>
-                  </div>
+                  </div> -->
                   <!-- Service Icon End -->
-                  <div class="service-content">
+                  <!-- <div class="service-content">
                      <h3>Data Analysis</h3>
                      <p>One of the top 100 advertising and marketing agencies knows what it means to be</p>
-                  </div>
+                  </div> -->
                   <!-- Service content end -->
-               </div>
+               <!-- </div> -->
                <!-- Service box End -->
-            </div>
+            <!-- </div> -->
             <!-- Col end -->
-         </div>
+         <!-- </div> -->
          <!-- Row end -->
-         <div class="tw-mb-30"></div>
+         <!-- <div class="tw-mb-30"></div>
          <div class="row">
             <div class="col-md-4">
                <div class="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
@@ -722,69 +754,68 @@
                      <div class="service-icon-inner d-table-cell">
                         <img src="images/icon/service4.png" alt="search engine" class="img-fluid">
                      </div>
-                  </div>
+                  </div> -->
                   <!-- Service icon end -->
-                  <div class="service-content">
+                  <!-- <div class="service-content">
                      <h3>Digital Marketing</h3>
                      <p>One of the top 100 advertising and marketing agencies knows what it means to be</p>
-                  </div>
+                  </div> -->
                   <!-- Service content end -->
-               </div>
+               <!-- </div> -->
                <!-- Service Box end -->
-            </div>
+            <!-- </div> -->
             <!-- Col end -->
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                <div class="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
                   <div class="service-icon service-icon-bg-5 d-table">
                      <div class="service-icon-inner d-table-cell">
                         <img src="images/icon/service5.png" alt="search engine" class="img-fluid">
                      </div>
-                  </div>
+                  </div> -->
                   <!-- Service icon end -->
-                  <div class="service-content">
+                  <!-- <div class="service-content">
                      <h3>Web Analytics</h3>
                      <p>One of the top 100 advertising and marketing agencies knows what it means to be</p>
-                  </div>
+                  </div> -->
                   <!-- Service content end -->
-               </div>
+               <!-- </div> -->
                <!-- Service box end -->
-            </div>
+            <!-- </div> -->
             <!-- Row End -->
-            <div class="col-md-4">
+            <!-- <div class="col-md-4">
                <div class="tw-service-box wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
                   <div class="service-icon service-icon-bg-6 d-table">
                      <div class="service-icon-inner d-table-cell">
                         <img src="images/icon/service6.png" alt="search engine" class="img-fluid">
                      </div>
-                  </div>
+                  </div> -->
                   <!-- Service Icon end-->
-                  <div class="service-content">
+                  <!-- <div class="service-content">
                      <h3>Social Marketing</h3>
-                     <p>One of the top 100 advertising and marketing agencies knows what it means to be</p>
-                  </div>
+                     <p>One of the top 100 advertising and marketing agencies knows what it means to be</p> -->
+                  <!-- </div> -->
                   <!-- Service Content end -->
-               </div>
+               <!-- </div> -->
                <!-- Service box end-->
-            </div>
+            <!-- </div> -->
             <!-- Col end -->
-         </div>
+         <!-- </div> -->
          <!-- Row End -->
-      </div>
+      <!-- </div> -->
       <!-- container -->
-   </section>
+   <!-- </section> -->
    <!-- Tw Service End -->
-
-   <section id="work-process" data-color="#fba123" class="section work-process bg-green gradient-5">
+<!-- 888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
+   <section id="work-process" class="work-process bg-green">
       <div class="work-bg-pattern d-none d-lg-inline-block">
-         <img src="images/process/process_arrow.png" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="1s"
-            data-wow-delay="1.2s">
+         <img src="images/process/process_arrow.png" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.2s">
       </div>
       <!-- End Work BG Pattern -->
       <div class="container">
          <div class="row text-center">
             <div class="col section-heading tw-text-white wow fadeInDown" data-wow-duration="1s">
                <h2>
-                  <small>Our Process</small>Our Working <span>Process</span></h2>
+                  <small>Spot Offers</small>360-degree <span> Marketing Benefits</span></h2>
             </div>
             <!-- End Col -->
          </div>
@@ -795,11 +826,54 @@
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
                      <div class="process-inner d-table-cell">
                         <img src="images/icon/process1.png" alt="" class="img-fluid">
-                        <span class="case-process-number">1</span>
+                        <!-- <span class="case-process-number">1</span> -->
                      </div>
                   </div>
                   <!-- End process wrapper -->
-                  <p>Research Project</p>
+                  <p>Low cost</p>
+                  <br>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div class="col-md-3">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>High return on investment</p>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div class="col-md-3">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Convert Off-Peak to Peak Hours</p>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div class="col-md-3">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Easy to measure</p>
                </div>
                <!-- End Tw work process -->
             </div>
@@ -808,12 +882,98 @@
                <div class="tw-work-process">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
                      <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Real Time Results</p>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div class="col-md-3">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Brand development</p>
+                  <br>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div class="col-md-3">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Target ideal customers</p>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div class="col-md-3">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Geo-targeted Ads</p>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div class="col-md-3">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Reach people at the start of the buying journey</p>
+                  <br>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div class="col-md-3">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Easy to adjust & edit</p>
+               </div>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            <div class="col-md-3">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                     <div class="process-inner d-table-cell">
                         <img src="images/icon/process2.png" alt="" class="img-fluid">
-                        <span class="case-process-number">2</span>
+                        <!-- <span class="case-process-number">2</span> -->
                      </div>
                   </div>
                   <!-- End Process Wrapper -->
-                  <p>Find Ideas</p>
+                  <p>Easy to share</p>
                </div>
                <!-- End Word Process -->
             </div>
@@ -823,28 +983,29 @@
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
                      <div class="process-inner d-table-cell">
                         <img src="images/icon/process3.png" alt="" class="img-fluid">
-                        <span class="case-process-number">3</span>
+                        <!-- <span class="case-process-number">3</span> -->
                      </div>
                   </div>
                   <!-- End Process Wrapper -->
-                  <p>Start Optimize</p>
+                  <p>
+                     Improves your conversion rate</p>
                </div>
                <!-- End Work Process -->
             </div>
             <!-- End Col -->
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                <div class="tw-work-process">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".8s">
                      <div class="process-inner d-table-cell">
-                        <img src="images/icon/process4.png" alt="" class="img-fluid">
-                        <span class="case-process-number">4</span>
-                     </div>
-                  </div>
+                        <img src="images/icon/process4.png" alt="" class="img-fluid"> -->
+                        <!-- <span class="case-process-number">4</span> -->
+                     <!-- </div>
+                  </div> -->
                   <!-- End PRocess Wrapper -->
-                  <p>Reach Target</p>
-               </div>
+                  <!-- <p>Reach Target</p> -->
+               <!-- </div> -->
                <!-- End Work Process -->
-            </div>
+            <!-- </div> -->
             <!-- End Col -->
          </div>
          <!-- End Row -->
@@ -853,13 +1014,13 @@
    </section>
    <!-- End Word Process -->
 
-   <section id="tw-case" data-color="#3af746" class="section tw-case gradient-6">
+   <section id="tw-case" class="tw-case">
       <div class="container">
          <div class="row text-center">
             <div class="col section-heading wow fadeInDown" data-wow-deuration="1s" data-wow-delay=".2s">
                <h2>
-                  <small>Our Cases</small>
-                  Our Case <span>Studies</span>
+                  <small></small>
+                  Our  <span>Servies</span>
                </h2>
                <!-- End Section Title -->
                <span class="animate-border border-offwhite ml-auto mr-auto tw-mt-20"></span>
@@ -871,14 +1032,14 @@
             <div class="col-lg-4 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                <div class="tw-case-study-box">
                   <div class="case-img study-bg-1">
-                     <img src="images/cases/case-study1.png" alt="" class="img-fluid">
+                     <img src="images/cases/case-study1.png" alt="" class="img-fluid ">
                   </div>
                   <!-- End case img -->
                   <div class="casestudy-content">
-                     <a href="#">
-                        <h4>Web Traffic Management</h4>
+                     <a href="marketing.html">
+                        <h4>Marketing</h4>
                      </a>
-                     <p>SEO, Marketing</p>
+                     <!-- <p>SEO, Marketing</p> -->
                   </div>
                   <!-- End case study content -->
                </div>
@@ -891,10 +1052,10 @@
                      <img src="images/cases/case-study2.png" alt="" class="img-fluid">
                   </div>
                   <div class="casestudy-content">
-                     <a href="#">
-                        <h4>Cloaking &amp; Doorway Pages</h4>
+                     <a href="strategy.html">
+                        <h4>Strategy </h4>
                      </a>
-                     <p>Social, SEO</p>
+                     <!-- <p>Social, SEO</p> -->
                   </div>
                   <!-- End case study content -->
                </div>
@@ -907,10 +1068,26 @@
                      <img src="images/cases/case-study3.png" alt="" class="img-fluid">
                   </div>
                   <div class="casestudy-content">
-                     <a href="#">
-                        <h4>Hosting company rank</h4>
+                     <a href="design.html">
+                        <h4>Design</h4>
                      </a>
-                     <p>Hosting, Marketing</p>
+                     <!-- <p>Hosting, Marketing</p> -->
+                  </div>
+                  <!-- End case study content -->
+               </div>
+               <!-- End case study box -->
+            </div>
+            <!-- End col -->
+            <div class="col-lg-4 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+               <div class="tw-case-study-box">
+                  <div class="case-img study-bg-3">
+                     <img src="images/cases/case-study3.png" alt="" class="img-fluid ">
+                  </div>
+                  <div class="casestudy-content">
+                     <a href="development.html">
+                        <h4>Development</h4>
+                     </a>
+                     <!-- <p>Hosting, Marketing</p> -->
                   </div>
                   <!-- End case study content -->
                </div>
@@ -924,9 +1101,294 @@
    </section>
    <!-- TW case end -->
 
+   <section id="work-process" class="work-process bg-green">
+      <div class="work-bg-pattern d-none d-lg-inline-block">
+         <img src="images/process/process_arrow.png" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.2s">
+      </div>
+      <!-- End Work BG Pattern -->
+      <div class="container">
+         <div class="row text-center">
+            <div class="col section-heading tw-text-white wow fadeInDown" data-wow-duration="1s">
+               <h2>
+                  <small></small><span>Industries </span> we help</h2>
+            </div>
+            <!-- End Col -->
+         </div>
+         <!-- End Row -->
+         <div class="row">
+           
+            <div class="col-md-3">
+               <a href="spot_offer.html">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Food & Beverages</p>
+                  <br>
+               </div>
+            </a>
+               <!-- End Tw work process -->
+            </div>
+            <!-- End Col -->
+            
+            <div class="col-md-3">
+               <a href="lead_generation.html">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Beauty</p>
+               </div>
+               <!-- End Tw work process -->
+            </a>
+            </div>
+         
+         
+            <!-- End Col -->
+            <div class="col-md-3">
+               <a href="sm_marketing.html">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Fashion</p>
+               </div>
+               <!-- End Tw work process -->
+            </a>
+            </div>
+        
+            <!-- End Col -->
+            
+            <div class="col-md-3">
+               <a href="ppc.html">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Travel</p>
+               </div>
+               <!-- End Tw work process -->
+            </a>
+            </div>
+         
+            <!-- End Col -->
+            
+            <div class="col-md-3">
+               <a href="growth_hacking.html">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>
+                     Consumer Electronics</p>
+               </div>
+               <!-- End Tw work process -->
+            </a>
+            </div>
+        
+            <!-- End Col -->
+         
+            <div class="col-md-3">
+               <a href="web_analytics.html">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Fitness</p>
+                  <br>
+               </div>
+               <!-- End Tw work process -->
+            </a>
+            </div>
+         
+            <!-- End Col -->
+            
+            <div class="col-md-3">
+               <a href="seo.html">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Pets</p>
+               </div>
+               <!-- End Tw work process -->
+            </a>
+            </div>
+         
+            <!-- End Col -->
+            
+            <div class="col-md-3">
+               <a href="sms_marketing.html">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Repairs</p>
+               </div>
+               <!-- End Tw work process -->
+            </a>
+            </div>
+         
+            <!-- End Col -->
+            
+            <div class="col-md-3">
+               <a href="gmbt.html">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Services</p>
+                  <br>
+               </div>
+               <!-- End Tw work process -->
+            </a>
+            </div>  
+            <!-- End Col -->
+
+            <div class="col-md-3">
+               <a href="gmbt.html">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Real Estate</p>
+                  <br>
+               </div>
+               <!-- End Tw work process -->
+            </a>
+            </div> 
+            <!-- End Col  -->
+            <div class="col-md-3">
+               <a href="gmbt.html">
+               <div class="tw-work-process">
+                  <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
+                     <div class="process-inner d-table-cell">
+                        <img src="images/icon/process1.png" alt="" class="img-fluid">
+                        <!-- <span class="case-process-number">1</span> -->
+                     </div>
+                  </div>
+                  <!-- End process wrapper -->
+                  <p>Education</p>
+                  <br>
+               </div>
+               <!-- End Tw work process -->
+            </a>
+            </div>  
+         </div>
+      
+         <!-- End Row -->
+      </div>
+      <!-- End Container -->
+   </section>
+   <!-- End Word Process -->
+
+   <h2>Why Spot Offers</h2>
+
+   <section id="tw-testimonial" class="tw-testimonial bg-overlay">
+      <div class="container">
+         <div class="row">
+            <div class="col text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+               <div class="section-heading">
+                  <h2 class="text-white">
+                     <small>Client’s Love</small>
+                     Love from <span>Client</span>
+                  </h2>
+               </div>
+            </div>
+            <!-- COl End -->
+         </div>
+         <!-- Row End -->
+         <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+               <div class="testimonial-slider owl-carousel">
+                  <div class="testimonial-content">
+                     <div class="testimonial-text">
+                        <p>Start working with an company that can do provide every thing at you need to generate awareness,
+                           drive traffic, connect with customers, and increase sales nascetur ridiculus mus. </p>
+                        <i class="icon icon-quote2"></i>
+                     </div>
+                     <!-- Testimonial text end -->
+                     <div class="testimonial-image">
+                        <img src="images/testimonial/profile.jpg" alt="">
+                     </div>
+                     <div class="testimonial-meta">
+                        <h4>
+                           Jason Stattham
+                           <small>CEO Microhost</small>
+                        </h4>
+                     </div>
+                     <!-- Testimonial Meta end -->
+                  </div>
+                  <div class="testimonial-content">
+                     <div class="testimonial-text">
+                        <p>Start working with an company that can do provide every thing at you need to generate awareness,
+                           drive traffic, connect with customers, and increase sales nascetur ridiculus mus. </p>
+                        <i class="icon icon-quote2"></i>
+                     </div>
+                     <!-- Testimonial text end -->
+                     <div class="testimonial-image">
+                        <img src="images/testimonial/profile.jpg" alt="">
+                     </div>
+                     <div class="testimonial-meta">
+                        <h4>
+                           Jason Stattham
+                           <small>CEO Microhost</small>
+                        </h4>
+                     </div>
+                     <!-- Testimonial Meta end -->
+                  </div>
+               </div>
+               <!-- Carousel End -->
+            </div>
+            <!-- COl End -->
+         </div>
+         <!-- Row End -->
+      </div>
+      <!-- Container End -->
+   </section>
    <!-- Testimonial end -->
 
-   <section id="tw-pricing" data-color="#000" class="section tw-pricing gradient-7">
+   <section id="tw-pricing" class="tw-pricing">
       <div class="container">
          <div class="row text-center">
             <div class="col section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
@@ -940,7 +1402,7 @@
          <!-- End Section Heading Row -->
          <div class="row">
             <div class="col-md-12 col-lg-4 wow zoomIn" data-wow-delay=".5s" data-wow-duration="1s">
-               <div class="tw-price-box">
+               <div class="tw-price-box bg-orange">
                   <div class="pricing-feaures">
                      <h3 class="text-white">Starter Plan</h3>
                      <div class="pricing-price">
@@ -1017,7 +1479,7 @@
    </section>
    <!-- End Pricing -->
 
-   <section id="tw-blog" data-color="#8bc3f9" class="section tw-blog gradient-8">
+   <section id="tw-blog" class="tw-blog">
       <div class="container">
          <div class="row text-center">
             <div class="col section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
@@ -1158,9 +1620,86 @@
    </section>
    <!-- End tw blog -->
 
+   <section id="tw-client" class="tw-client">
+      <div class="container">
+         <div class="row  wow fadeInUp">
+            <div class="col-md-12">
+               <div class="clients-carousel owl-carousel">
+                  <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client1.png" alt="">
+                     </div>
+                     <!-- End Clients logo -->
+                  </div>
+                  <!-- End Client wrapper -->
+                  <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client2.png" alt="">
+                     </div>
+                     <!-- End Clients logo -->
+                  </div>
+                  <!-- End Client wrapper -->
+                  <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client3.png" alt="">
+                     </div>
+                     <!-- End Clients logo -->
+                  </div>
+                  <!-- End Client wrapper -->
+                  <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client4.png" alt="">
+                     </div>
+                     <!-- End Clients logo -->
+                  </div>
+                  <!-- End Client wrapper -->
+                  <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client5.png" alt="">
+                     </div>
+                     <!-- End Clients logo -->
+                  </div>
+                  <!-- End Client wrapper -->
+                  <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client2.png" alt="">
+                     </div>
+                     <!-- End Clients logo -->
+                  </div>
+                  <!-- End Client wrapper -->
+                  <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client3.png" alt="">
+                     </div>
+                     <!-- End Clients logo -->
+                  </div>
+                  <!-- End Client wrapper -->
+                  <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client4.png" alt="">
+                     </div>
+                     <!-- End Clients logo -->
+                  </div>
+                  <!-- End Client wrapper -->
+                  <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client5.png" alt="">
+                     </div>
+                     <!-- End Clients logo -->
+                  </div>
+                  <!-- End Client wrapper -->
+               </div>
+               <!-- End Carousel -->
+            </div>
+            <!-- End Col -->
+         </div>
+         <!-- End Row -->
+      </div>
+      <!-- End Container -->
+   </section>
    <!-- End Tw Client -->
 
-   <footer id="tw-footer" data-color="#b3a764" class="section tw-footer">
+   <footer id="tw-footer" class="tw-footer">
       <div class="container">
          <div class="footer-contact">
             <div class="row">
@@ -1323,114 +1862,31 @@
    <!-- Javascripts File
       =============================================================================-->
 
-   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-   <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
-
-   <!-- <script src="js/slideNav.js"></script> -->
-
-   <!-- <script>
-      window.slide = new SlideNav({
-         changeHash: true
-      });
-   </script> -->
-
-   <!-- <script>
-      const gra = function (min, max) {
-         return Math.random() * (max - min) + min;
-      }
-      const init = function () {
-         let items = document.querySelectorAll('section');
-         for (let i = 0; i < items.length; i++) {
-            items[i].style.background = randomColor({ luminosity: 'light' });
-         }
-         cssScrollSnapPolyfill()
-      }
-      init();
-   </script> -->
-
    <!-- initialize jQuery Library -->
    <script src="js/jquery-2.0.0.min.js"></script>
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
-
    <!-- Popper JS -->
-   <!-- <script src="js/popper.min.js"></script> -->
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"
-      integrity="sha256-FT/LokHAO3u6YAZv6/EKb7f2e0wXY3Ff/9Ww5NzT+Bk=" crossorigin="anonymous"></script> -->
-
+   <script src="js/popper.min.js"></script>
    <!-- Bootstrap jQuery -->
-   <!-- <script src="js/bootstrap.min.js"></script> -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha256-OFRAJNoaD8L3Br5lglV7VyLRf0itmoBzWUoM+Sji4/8=" crossorigin="anonymous"></script>
-
+   <script src="js/bootstrap.min.js"></script>
    <!-- Owl Carousel -->
    <script src="js/owl-carousel.2.3.0.min.js"></script>
-
    <!-- Waypoint -->
-   <!-- <script src="js/waypoints.min.js"></script> -->
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-      integrity="sha256-w49DIDk8itgSjjuoof5lTxYKwcjWJ7Z2sRW3nU1StNA=" crossorigin="anonymous"></script> -->
-
+   <script src="js/waypoints.min.js"></script>
    <!-- Counter Up -->
-   <!-- <script src="js/jquery.counterup.min.js"></script> -->
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
-      integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script> -->
-
+   <script src="js/jquery.counterup.min.js"></script>
    <!-- Video Popup -->
-   <!-- <script src="js/jquery.magnific.popup.js"></script> -->
-
+   <script src="js/jquery.magnific.popup.js"></script>
    <!-- Smooth scroll -->
-   <!-- <script src="js/smoothscroll.js"></script> -->
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js"
-      integrity="sha256-IylDNWjip7FK2TJUYck237qBTBeSiwnSFDCjLG686D4=" crossorigin="anonymous"></script> -->
-
+   <script src="js/smoothscroll.js"></script>
    <!-- WoW js -->
-   <!-- <script src="js/wow.min.js"></script> -->
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-      integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script> -->
-
+   <script src="js/wow.min.js"></script>
    <!-- Template Custom -->
+   
    <script src="js/main.js"></script>
-   <script src="js/color.js"></script>
-
-   <!-- <script>
-      function myFunction() {
-         var x = document.getElementById("mymenu");
-         if (x.className === "nav") {
-            x.className += " responsive";
-         } else {
-            x.className = "nav";
-         }
-      }
-   </script> -->
-
-   <!-- <script>
-      $(document).ready(function () {
-         // Add smooth scrolling to all links
-         $("a").on('click', function (event) {
-
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-               // Prevent default anchor click behavior
-               event.preventDefault();
-
-               // Store hash
-               var hash = this.hash;
-
-               // Using jQuery's animate() method to add smooth page scroll
-               // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-               $('html').animate({
-                  scrollTop: $(hash).offset().top
-               }, 800, function () {
-
-                  // Add hash (#) to URL when done scrolling (default click behavior)
-                  window.location.hash = hash;
-               });
-            } // End if
-         });
-      });
-   </script> -->
-
+   <!-- <script src="new/index.js"></script> -->
+   
 </body>
 
+
+<!-- Mirrored from demo.themewinter.com/html/seotime/multipage/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 May 2020 06:47:34 GMT -->
 </html>
