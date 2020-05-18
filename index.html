@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-
+   
 <!-- Mirrored from demo.themewinter.com/html/seotime/multipage/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 May 2020 06:47:04 GMT -->
 <head>
    <!-- Basic Page Needs =====================================-->
@@ -49,6 +49,144 @@
       <![endif]-->
 
       <!-- <link rel="stylesheet" href="new/index.css"> -->
+      
+      <!-- contact us CSS -->
+      <!-- <link rel="stylesheet" href="css/master.css"> -->
+      <style type="text/css">
+         h2{
+       text-align:center;
+       padding: 20px;
+     }
+     /* Slider */
+     
+     .slick-slide {
+         margin: 0px 20px;
+     }
+     
+     .slick-slide img {
+         width: 100%;
+     }
+     
+     .slick-slider
+     {
+         position: relative;
+         display: block;
+         box-sizing: border-box;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+                 user-select: none;
+         -webkit-touch-callout: none;
+         -khtml-user-select: none;
+         -ms-touch-action: pan-y;
+             touch-action: pan-y;
+         -webkit-tap-highlight-color: transparent;
+     }
+     
+     .slick-list
+     {
+         position: relative;
+         display: block;
+         overflow: hidden;
+         margin: 0;
+         padding: 0;
+     }
+     .slick-list:focus
+     {
+         outline: none;
+     }
+     .slick-list.dragging
+     {
+         cursor: pointer;
+         cursor: hand;
+     }
+     
+     .slick-slider .slick-track,
+     .slick-slider .slick-list
+     {
+         -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+             -ms-transform: translate3d(0, 0, 0);
+              -o-transform: translate3d(0, 0, 0);
+                 transform: translate3d(0, 0, 0);
+     }
+     
+     .slick-track
+     {
+         position: relative;
+         top: 0;
+         left: 0;
+         display: block;
+     }
+     .slick-track:before,
+     .slick-track:after
+     {
+         display: table;
+         content: '';
+     }
+     .slick-track:after
+     {
+         clear: both;
+     }
+     .slick-loading .slick-track
+     {
+         visibility: hidden;
+     }
+     
+     .slick-slide
+     {
+         display: none;
+         float: left;
+         height: 100%;
+         min-height: 1px;
+     }
+     [dir='rtl'] .slick-slide
+     {
+         float: right;
+     }
+     .slick-slide img
+     {
+         display: block;
+     }
+     .slick-slide.slick-loading img
+     {
+         display: none;
+     }
+     .slick-slide.dragging img
+     {
+         pointer-events: none;
+     }
+     .slick-initialized .slick-slide
+     {
+         display: block;
+     }
+     .slick-loading .slick-slide
+     {
+         visibility: hidden;
+     }
+     .slick-vertical .slick-slide
+     {
+         display: block;
+         height: auto;
+         border: 1px solid transparent;
+     }
+     .slick-arrow.slick-hidden {
+         display: none;
+     }    </style>
+         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> -->
+         <script type="text/javascript">
+             window.alert = function(){};
+             var defaultCSS = document.getElementById('bootstrap-css');
+             function changeCSS(css){
+                 if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+                 else $('head > link').filter(':first').replaceWith(defaultCSS); 
+             }
+             $( document ).ready(function() {
+               var iframe_height = parseInt($('html').height()); 
+               window.parent.postMessage( iframe_height, 'htts://bootsnipp.com/');
+             });
+         </script>
 </head>
 
 <body>
@@ -93,9 +231,9 @@
       <div class="tw-head">
          <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
-               <a class="navbar-brand tw-nav-brand" href="index.html">
+               <!-- <a class="navbar-brand tw-nav-brand" href="index.html">
                   <img src="images/logo/logo.png" alt="seotime">
-               </a>
+               </a> -->
                <!-- End of Navbar Brand -->
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                   aria-expanded="false" aria-label="Toggle navigation">
@@ -808,7 +946,7 @@
 <!-- 888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
    <section id="work-process" class="work-process bg-green">
       <div class="work-bg-pattern d-none d-lg-inline-block">
-         <img src="images/process/process_arrow.png" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.2s">
+         <!-- <img src="images/process/process_arrow.png" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.2s"> -->
       </div>
       <!-- End Work BG Pattern -->
       <div class="container">
@@ -1029,7 +1167,7 @@
          </div>
          <!-- End Row -->
          <div class="row">
-            <div class="col-lg-4 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+            <div class="col-lg-3 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
                <div class="tw-case-study-box">
                   <div class="case-img study-bg-1">
                      <img src="images/cases/case-study1.png" alt="" class="img-fluid ">
@@ -1046,7 +1184,7 @@
                <!-- End case study box -->
             </div>
             <!-- End Col -->
-            <div class="col-lg-4 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+            <div class="col-lg-3 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                <div class="tw-case-study-box">
                   <div class="case-img study-bg-2">
                      <img src="images/cases/case-study2.png" alt="" class="img-fluid">
@@ -1062,7 +1200,7 @@
                <!-- End case study box -->
             </div>
             <!-- End Col -->
-            <div class="col-lg-4 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+            <div class="col-lg-3 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
                <div class="tw-case-study-box">
                   <div class="case-img study-bg-3">
                      <img src="images/cases/case-study3.png" alt="" class="img-fluid">
@@ -1078,7 +1216,7 @@
                <!-- End case study box -->
             </div>
             <!-- End col -->
-            <div class="col-lg-4 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+            <div class="col-lg-3 col-md-12 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
                <div class="tw-case-study-box">
                   <div class="case-img study-bg-3">
                      <img src="images/cases/case-study3.png" alt="" class="img-fluid ">
@@ -1103,7 +1241,7 @@
 
    <section id="work-process" class="work-process bg-green">
       <div class="work-bg-pattern d-none d-lg-inline-block">
-         <img src="images/process/process_arrow.png" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.2s">
+         <!-- <img src="images/process/process_arrow.png" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.2s"> -->
       </div>
       <!-- End Work BG Pattern -->
       <div class="container">
@@ -1118,7 +1256,7 @@
          <div class="row">
            
             <div class="col-md-3">
-               <a href="spot_offer.html">
+              
                <div class="tw-work-process">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
                      <div class="process-inner d-table-cell">
@@ -1130,13 +1268,13 @@
                   <p>Food & Beverages</p>
                   <br>
                </div>
-            </a>
+           
                <!-- End Tw work process -->
             </div>
             <!-- End Col -->
             
             <div class="col-md-3">
-               <a href="lead_generation.html">
+               
                <div class="tw-work-process">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
                      <div class="process-inner d-table-cell">
@@ -1148,13 +1286,13 @@
                   <p>Beauty</p>
                </div>
                <!-- End Tw work process -->
-            </a>
+          
             </div>
          
          
             <!-- End Col -->
             <div class="col-md-3">
-               <a href="sm_marketing.html">
+              
                <div class="tw-work-process">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
                      <div class="process-inner d-table-cell">
@@ -1166,13 +1304,13 @@
                   <p>Fashion</p>
                </div>
                <!-- End Tw work process -->
-            </a>
+           
             </div>
         
             <!-- End Col -->
             
             <div class="col-md-3">
-               <a href="ppc.html">
+              
                <div class="tw-work-process">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".2s">
                      <div class="process-inner d-table-cell">
@@ -1184,13 +1322,13 @@
                   <p>Travel</p>
                </div>
                <!-- End Tw work process -->
-            </a>
+          
             </div>
          
             <!-- End Col -->
             
             <div class="col-md-3">
-               <a href="growth_hacking.html">
+              
                <div class="tw-work-process">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
                      <div class="process-inner d-table-cell">
@@ -1203,13 +1341,13 @@
                      Consumer Electronics</p>
                </div>
                <!-- End Tw work process -->
-            </a>
+           
             </div>
         
             <!-- End Col -->
          
             <div class="col-md-3">
-               <a href="web_analytics.html">
+              
                <div class="tw-work-process">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
                      <div class="process-inner d-table-cell">
@@ -1222,13 +1360,13 @@
                   <br>
                </div>
                <!-- End Tw work process -->
-            </a>
+           
             </div>
          
             <!-- End Col -->
             
             <div class="col-md-3">
-               <a href="seo.html">
+               
                <div class="tw-work-process">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
                      <div class="process-inner d-table-cell">
@@ -1240,13 +1378,13 @@
                   <p>Pets</p>
                </div>
                <!-- End Tw work process -->
-            </a>
+            
             </div>
          
             <!-- End Col -->
             
             <div class="col-md-3">
-               <a href="sms_marketing.html">
+               
                <div class="tw-work-process">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".4s">
                      <div class="process-inner d-table-cell">
@@ -1258,13 +1396,13 @@
                   <p>Repairs</p>
                </div>
                <!-- End Tw work process -->
-            </a>
+            
             </div>
          
             <!-- End Col -->
             
             <div class="col-md-3">
-               <a href="gmbt.html">
+               
                <div class="tw-work-process">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
                      <div class="process-inner d-table-cell">
@@ -1277,12 +1415,12 @@
                   <br>
                </div>
                <!-- End Tw work process -->
-            </a>
+            
             </div>  
             <!-- End Col -->
 
             <div class="col-md-3">
-               <a href="gmbt.html">
+               
                <div class="tw-work-process">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
                      <div class="process-inner d-table-cell">
@@ -1295,11 +1433,11 @@
                   <br>
                </div>
                <!-- End Tw work process -->
-            </a>
+            
             </div> 
             <!-- End Col  -->
             <div class="col-md-3">
-               <a href="gmbt.html">
+               
                <div class="tw-work-process">
                   <div class="process-wrapper d-table wow zoomIn" data-wow-duration="1s" data-wow-delay=".6s">
                      <div class="process-inner d-table-cell">
@@ -1312,7 +1450,7 @@
                   <br>
                </div>
                <!-- End Tw work process -->
-            </a>
+            
             </div>  
          </div>
       
@@ -1322,7 +1460,7 @@
    </section>
    <!-- End Word Process -->
 
-   <h2>Why Spot Offers</h2>
+   <!-- <h2>Why Spot Offers</h2>
 
    <section id="tw-testimonial" class="tw-testimonial bg-overlay">
       <div class="container">
@@ -1334,11 +1472,11 @@
                      Love from <span>Client</span>
                   </h2>
                </div>
-            </div>
+            </div> -->
             <!-- COl End -->
-         </div>
+         <!-- </div> -->
          <!-- Row End -->
-         <div class="row justify-content-center">
+         <!-- <div class="row justify-content-center">
             <div class="col-md-10 text-center">
                <div class="testimonial-slider owl-carousel">
                   <div class="testimonial-content">
@@ -1346,9 +1484,9 @@
                         <p>Start working with an company that can do provide every thing at you need to generate awareness,
                            drive traffic, connect with customers, and increase sales nascetur ridiculus mus. </p>
                         <i class="icon icon-quote2"></i>
-                     </div>
+                     </div> -->
                      <!-- Testimonial text end -->
-                     <div class="testimonial-image">
+                     <!-- <div class="testimonial-image">
                         <img src="images/testimonial/profile.jpg" alt="">
                      </div>
                      <div class="testimonial-meta">
@@ -1356,17 +1494,17 @@
                            Jason Stattham
                            <small>CEO Microhost</small>
                         </h4>
-                     </div>
+                     </div> -->
                      <!-- Testimonial Meta end -->
-                  </div>
+                  <!-- </div>
                   <div class="testimonial-content">
                      <div class="testimonial-text">
                         <p>Start working with an company that can do provide every thing at you need to generate awareness,
                            drive traffic, connect with customers, and increase sales nascetur ridiculus mus. </p>
                         <i class="icon icon-quote2"></i>
-                     </div>
+                     </div> -->
                      <!-- Testimonial text end -->
-                     <div class="testimonial-image">
+                     <!-- <div class="testimonial-image">
                         <img src="images/testimonial/profile.jpg" alt="">
                      </div>
                      <div class="testimonial-meta">
@@ -1374,21 +1512,21 @@
                            Jason Stattham
                            <small>CEO Microhost</small>
                         </h4>
-                     </div>
+                     </div> -->
                      <!-- Testimonial Meta end -->
-                  </div>
-               </div>
+                  <!-- </div>
+               </div> -->
                <!-- Carousel End -->
-            </div>
+            <!-- </div> -->
             <!-- COl End -->
-         </div>
+         <!-- </div> -->
          <!-- Row End -->
-      </div>
+      <!-- </div> -->
       <!-- Container End -->
-   </section>
+   <!-- </section> -->
    <!-- Testimonial end -->
 
-   <section id="tw-pricing" class="tw-pricing">
+   <!-- <section id="tw-pricing" class="tw-pricing">
       <div class="container">
          <div class="row text-center">
             <div class="col section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
@@ -1396,11 +1534,11 @@
                   <small>Our Pricing</small>
                   Our Pricing <span>Table</span>
                </h2>
-            </div>
+            </div> -->
             <!-- End Col -->
-         </div>
+         <!-- </div> -->
          <!-- End Section Heading Row -->
-         <div class="row">
+         <!-- <div class="row">
             <div class="col-md-12 col-lg-4 wow zoomIn" data-wow-delay=".5s" data-wow-duration="1s">
                <div class="tw-price-box bg-orange">
                   <div class="pricing-feaures">
@@ -1409,23 +1547,23 @@
                         <sup>$</sup>
                         <strong>49.99</strong>
                         <small>/mo</small>
-                     </div>
+                     </div> -->
                      <!-- Pricing End -->
-                     <ul>
+                     <!-- <ul>
                         <li>25 Analytics Compaign</li>
                         <li>1,300 Keywords</li>
                         <li>25 social media reviews</li>
                         <li>1 Free Optimization</li>
                         <li>24/7 support</li>
                      </ul>
-                  </div>
+                  </div> -->
                   <!-- Pricing Features End -->
-                  <a href="#" class="btn btn-white tw-mt-30">buy now</a>
-               </div>
+                  <!-- <a href="#" class="btn btn-white tw-mt-30">buy now</a>
+               </div> -->
                <!--  pricing box ends -->
-            </div>
+            <!-- </div> -->
             <!-- COl end -->
-            <div class="col-md-12 col-lg-4 wow zoomIn" data-wow-delay="1.2s" data-wow-duration="1s">
+            <!-- <div class="col-md-12 col-lg-4 wow zoomIn" data-wow-delay="1.2s" data-wow-duration="1s">
                <div class="tw-price-box bg-yellow">
                   <div class="pricing-feaures">
                      <h3 class="text-white">Basic Plan</h3>
@@ -1433,23 +1571,23 @@
                         <sup>$</sup>
                         <strong>69.99</strong>
                         <small>/mo</small>
-                     </div>
+                     </div> -->
                      <!-- Pricing End -->
-                     <ul>
+                     <!-- <ul>
                         <li>25 Analytics Compaign</li>
                         <li>1,300 Keywords</li>
                         <li>25 social media reviews</li>
                         <li>1 Free Optimization</li>
                         <li>24/7 support</li>
                      </ul>
-                  </div>
+                  </div> -->
                   <!-- Pricing Features End -->
-                  <a href="#" class="btn btn-white tw-mt-30">buy now</a>
-               </div>
+                  <!-- <a href="#" class="btn btn-white tw-mt-30">buy now</a>
+               </div> -->
                <!--  pricing box ends -->
-            </div>
+            <!-- </div> -->
             <!-- COl end -->
-            <div class="col-md-12 col-lg-4 wow zoomIn" data-wow-delay="1.6s" data-wow-duration="1s">
+            <!-- <div class="col-md-12 col-lg-4 wow zoomIn" data-wow-delay="1.6s" data-wow-duration="1s">
                <div class="tw-price-box bg-green">
                   <div class="pricing-feaures">
                      <h3 class="text-white">Advanced Plan</h3>
@@ -1457,29 +1595,29 @@
                         <sup>$</sup>
                         <strong>99.99</strong>
                         <small>/mo</small>
-                     </div>
+                     </div> -->
                      <!-- Pricing End -->
-                     <ul>
+                     <!-- <ul>
                         <li>25 Analytics Compaign</li>
                         <li>1,300 Keywords</li>
                         <li>25 social media reviews</li>
                         <li>1 Free Optimization</li>
                         <li>24/7 support</li>
                      </ul>
-                  </div>
+                  </div> -->
                   <!-- Pricing Features End -->
-                  <a href="#" class="btn btn-white tw-mt-30">buy now</a>
-               </div>
+                  <!-- <a href="#" class="btn btn-white tw-mt-30">buy now</a>
+               </div> -->
                <!--  pricing box ends -->
-            </div>
+            <!-- </div> -->
             <!-- COl end -->
-         </div>
-      </div>
+         <!-- </div>
+      </div> -->
       <!-- Container End -->
-   </section>
+   <!-- </section> -->
    <!-- End Pricing -->
 
-   <section id="tw-blog" class="tw-blog">
+   <!-- <section id="tw-blog" class="tw-blog">
       <div class="container">
          <div class="row text-center">
             <div class="col section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
@@ -1487,341 +1625,344 @@
                   <small>Latest News</small>
                   Our Latest <span>News</span>
                </h2>
-            </div>
+            </div> -->
             <!-- Col end -->
-         </div>
+         <!-- </div> -->
          <!-- Row End -->
-         <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+         <!-- <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
             <div class="col-lg-4 col-md-12">
                <div class="tw-latest-post">
                   <div class="latest-post-media text-center">
                      <img src="images/news/post1.jpg" alt="blog_image_one" class="img-fluid">
-                  </div>
+                  </div> -->
                   <!-- End Latest Post Media -->
-                  <div class="post-body">
+                  <!-- <div class="post-body">
                      <div class="post-item-date">
                         <div class="post-date">
                            <span class="date">29</span>
                            <span class="month">May</span>
                         </div>
-                     </div>
+                     </div> -->
                      <!-- End Post Item Date -->
-                     <div class="post-info">
+                     <!-- <div class="post-info">
                         <div class="post-meta">
                            <span class="post-author">
                               Posted by <a href="#">Admin</a>
                            </span>
-                        </div>
+                        </div> -->
                         <!-- End Post Meta -->
-                        <h3 class="post-title"><a href="#">SEO trend to look for the best in 2018</a></h3>
+                        <!-- <h3 class="post-title"><a href="#">SEO trend to look for the best in 2018</a></h3>
                         <div class="entry-content">
                            <p>
                               One of the top 100 advertising of a marketing agencies know that how to grow your busines
                            </p>
-                        </div>
+                        </div> -->
                         <!-- End Entry Content -->
-                        <a href="#" class="tw-readmore">Read More
+                        <!-- <a href="#" class="tw-readmore">Read More
                            <i class="fa fa-angle-right"></i>
                         </a>
-                     </div>
+                     </div> -->
                      <!-- End Post info -->
-                  </div>
+                  <!-- </div> -->
                   <!-- End Post Body -->
-               </div>
+               <!-- </div> -->
                <!-- End Tw Latest Post -->
-            </div>
+            <!-- </div> -->
             <!-- End Col -->
-            <div class="col-lg-4 col-md-12">
+            <!-- <div class="col-lg-4 col-md-12">
                <div class="tw-latest-post">
                   <div class="latest-post-media text-center">
                      <img src="images/news/post2.jpg" alt="blog_image_one" class="img-fluid">
-                  </div>
+                  </div> -->
                   <!-- End Latest Post Media -->
-                  <div class="post-body">
+                  <!-- <div class="post-body">
                      <div class="post-item-date">
                         <div class="post-date">
                            <span class="date">29</span>
                            <span class="month">May</span>
                         </div>
-                     </div>
+                     </div> -->
                      <!-- End Post Item Date -->
-                     <div class="post-info">
+                     <!-- <div class="post-info">
                         <div class="post-meta">
                            <span class="post-author">
                               Posted by <a href="#">Admin</a>
                            </span>
-                        </div>
+                        </div> -->
                         <!-- End Post Meta -->
-                        <h3 class="post-title"><a href="#">SEO trend to look for the best in 2018</a></h3>
+                        <!-- <h3 class="post-title"><a href="#">SEO trend to look for the best in 2018</a></h3>
                         <div class="entry-content">
                            <p>
                               One of the top 100 advertising of a marketing agencies know that how to grow your busines
                            </p>
-                        </div>
+                        </div> -->
                         <!-- End Entry Content -->
-                        <a href="#" class="tw-readmore">Read More
+                        <!-- <a href="#" class="tw-readmore">Read More
                            <i class="fa fa-angle-right"></i>
                         </a>
-                     </div>
+                     </div> -->
                      <!-- End Post info -->
-                  </div>
+                  <!-- </div> -->
                   <!-- End Post Body -->
-               </div>
+               <!-- </div> -->
                <!-- End Tw Latest Post -->
-            </div>
+            <!-- </div> -->
             <!-- End Col -->
-            <div class="col-lg-4 col-md-12">
+            <!-- <div class="col-lg-4 col-md-12">
                <div class="tw-latest-post">
                   <div class="latest-post-media text-center">
                      <img src="images/news/post3.jpg" alt="blog_image_one" class="img-fluid">
-                  </div>
+                  </div> -->
                   <!-- End Latest Post Media -->
-                  <div class="post-body">
+                  <!-- <div class="post-body">
                      <div class="post-item-date">
                         <div class="post-date">
                            <span class="date">29</span>
                            <span class="month">May</span>
                         </div>
-                     </div>
+                     </div> -->
                      <!-- End Post Item Date -->
-                     <div class="post-info">
+                     <!-- <div class="post-info">
                         <div class="post-meta">
                            <span class="post-author">
                               Posted by <a href="#">Admin</a>
                            </span>
-                        </div>
+                        </div> -->
                         <!-- End Post Meta -->
-                        <h3 class="post-title"><a href="#">SEO trend to look for the best in 2018</a></h3>
+                        <!-- <h3 class="post-title"><a href="#">SEO trend to look for the best in 2018</a></h3>
                         <div class="entry-content">
                            <p>
                               One of the top 100 advertising of a marketing agencies know that how to grow your busines
                            </p>
-                        </div>
+                        </div> -->
                         <!-- End Entry Content -->
-                        <a href="#" class="tw-readmore">Read More
+                        <!-- <a href="#" class="tw-readmore">Read More
                            <i class="fa fa-angle-right"></i>
                         </a>
-                     </div>
+                     </div> -->
                      <!-- End Post info -->
-                  </div>
+                  <!-- </div> -->
                   <!-- End Post Body -->
-               </div>
+               <!-- </div> -->
                <!-- End Tw Latest Post -->
-            </div>
+            <!-- </div> -->
             <!-- End Col -->
 
-            <div class="col-md-12 text-center tw-mt-60">
+            <!-- <div class="col-md-12 text-center tw-mt-60">
                <a href="#" class="btn btn-primary">view all</a>
             </div>
-         </div>
+         </div> -->
          <!-- End Row -->
-      </div>
+      <!-- </div> -->
       <!-- Container End -->
-   </section>
+   <!-- </section> -->
    <!-- End tw blog -->
-
+   <section>
+      <div class="container">
+         <h2>Our  Partners/ Our Clients</h2>
+          <section class="customer-logos slider">
+             <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+             <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
+             <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+             <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+             <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+             <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+             <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+             <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+             <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+          </section>
+          
+       <!-- <h2><a href="http://www.webcoderskull.com/" target="_blank">http://www.webcoderskull.com</a></h2> -->
+       </div>
+<!-- 
    <section id="tw-client" class="tw-client">
       <div class="container">
          <div class="row  wow fadeInUp">
-            <div class="col-md-12">
-               <div class="clients-carousel owl-carousel">
+            <div class="col-md-12 "> -->
+               <!-- <div class="clients-carousel owl-carousel"> -->
+                  <!-- <div class="col-lg-12">
                   <div class="client-logo-wrapper d-table">
                      <div class="client-logo d-table-cell">
-                        <img src="images/clients/client1.png" alt="">
-                     </div>
-                     <!-- End Clients logo -->
-                  </div>
-                  <!-- End Client wrapper -->
-                  <div class="client-logo-wrapper d-table">
+                        <img src="images/clients/client1.png" alt=""></div>
                      <div class="client-logo d-table-cell">
-                        <img src="images/clients/client2.png" alt="">
-                     </div>
-                     <!-- End Clients logo -->
-                  </div>
-                  <!-- End Client wrapper -->
-                  <div class="client-logo-wrapper d-table">
+                        <img src="images/clients/client1.png" alt=""></div>
                      <div class="client-logo d-table-cell">
-                        <img src="images/clients/client3.png" alt="">
-                     </div>
-                     <!-- End Clients logo -->
-                  </div>
-                  <!-- End Client wrapper -->
-                  <div class="client-logo-wrapper d-table">
+                        <img src="images/clients/client1.png" alt=""></div>
                      <div class="client-logo d-table-cell">
-                        <img src="images/clients/client4.png" alt="">
-                     </div>
+                        <img src="images/clients/client1.png" alt=""></div>
+                     </div> -->
+                  <!-- </div>88888 -->
                      <!-- End Clients logo -->
-                  </div>
+                  <!-- </div>
+                  <br> -->
                   <!-- End Client wrapper -->
-                  <div class="client-logo-wrapper d-table">
-                     <div class="client-logo d-table-cell">
-                        <img src="images/clients/client5.png" alt="">
-                     </div>
-                     <!-- End Clients logo -->
-                  </div>
-                  <!-- End Client wrapper -->
-                  <div class="client-logo-wrapper d-table">
-                     <div class="client-logo d-table-cell">
-                        <img src="images/clients/client2.png" alt="">
-                     </div>
-                     <!-- End Clients logo -->
-                  </div>
-                  <!-- End Client wrapper -->
-                  <div class="client-logo-wrapper d-table">
-                     <div class="client-logo d-table-cell">
-                        <img src="images/clients/client3.png" alt="">
-                     </div>
-                     <!-- End Clients logo -->
-                  </div>
-                  <!-- End Client wrapper -->
-                  <div class="client-logo-wrapper d-table">
-                     <div class="client-logo d-table-cell">
-                        <img src="images/clients/client4.png" alt="">
-                     </div>
-                     <!-- End Clients logo -->
-                  </div>
-                  <!-- End Client wrapper -->
-                  <div class="client-logo-wrapper d-table">
-                     <div class="client-logo d-table-cell">
-                        <img src="images/clients/client5.png" alt="">
-                     </div>
-                     <!-- End Clients logo -->
-                  </div>
-                  <!-- End Client wrapper -->
+                  <!-- <div class="col-lg-12">
+                     <div class="client-logo-wrapper d-table">
+                        <div class="client-logo d-table-cell">
+                           <img src="images/clients/client1.png" alt=""></div>
+                        <div class="client-logo d-table-cell">
+                           <img src="images/clients/client1.png" alt=""></div>
+                        <div class="client-logo d-table-cell">
+                           <img src="images/clients/client1.png" alt=""></div>
+                        <div class="client-logo d-table-cell">
+                           <img src="images/clients/client1.png" alt=""></div>
+                        </div>
                </div>
+               <br> -->
+                  <!-- End Client wrapper -->
+                  <!-- <div class="col-lg-12">
+                  <div class="client-logo-wrapper d-table">
+                     <div class="client-logo-wrapper d-table">
+                        <div class="client-logo d-table-cell">
+                           <img src="images/clients/client1.png" alt=""></div>
+                        <div class="client-logo d-table-cell">
+                           <img src="images/clients/client1.png" alt=""></div>
+                        <div class="client-logo d-table-cell">
+                           <img src="images/clients/client1.png" alt=""></div>
+                        <div class="client-logo d-table-cell">
+                           <img src="images/clients/client1.png" alt=""></div>
+                        </div> -->
+                     <!-- End Clients logo -->
+                  <!-- </div>
+                  </div>
+                  <br> -->
+                  <!-- End Client wrapper -->
+                  <!-- <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client4.png" alt="">
+                     </div>
+                     End Clients logo
+                  </div> -->
+                  <!-- End Client wrapper -->
+                  <!-- <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client5.png" alt="">
+                     </div> -->
+                     <!-- End Clients logo -->
+                  <!-- </div> -->
+                  <!-- End Client wrapper -->
+                  <!-- <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client2.png" alt="">
+                     </div> -->
+                     <!-- End Clients logo -->
+                  <!-- </div> -->
+                  <!-- End Client wrapper -->
+                  <!-- <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client3.png" alt="">
+                     </div> -->
+                     <!-- End Clients logo -->
+                  <!-- </div> -->
+                  <!-- End Client wrapper -->
+                  <!-- <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client4.png" alt="">
+                     </div> -->
+                     <!-- End Clients logo -->
+                  <!-- </div> -->
+                  <!-- End Client wrapper -->
+                  <!-- <div class="client-logo-wrapper d-table">
+                     <div class="client-logo d-table-cell">
+                        <img src="images/clients/client5.png" alt="">
+                     </div> -->
+                     <!-- End Clients logo -->
+                  <!-- </div> -->
+                  <!-- End Client wrapper -->
+               <!-- </div> -->
                <!-- End Carousel -->
-            </div>
+            <!-- </div> -->
             <!-- End Col -->
-         </div>
+         <!-- </div> -->
          <!-- End Row -->
-      </div>
+      <!-- </div> -->
       <!-- End Container -->
    </section>
    <!-- End Tw Client -->
+   <!-- <body> -->
+    
 
-   <footer id="tw-footer" class="tw-footer">
-      <div class="container">
-         <div class="footer-contact">
+      <section  class=" bg-green"id="contact">
+          <div class="container">
             <div class="row">
-               <div class="col-lg-4">
-                  <ul class="footer-contact-info">
-                     <li>
-                        <span><i class="icon icon-map-marker2"></i></span>
-                        <div class="info-wrapper">
-                           <p class="info-title">Find us</p>
-                           <p class="info-subtitle">1010 Avenue, NY 90001, USA</p>
-                        </div>
-                     </li>
-                     <!-- li End -->
-                  </ul>
-                  <!-- Footer Info End -->
-               </div>
-               <!-- Col End -->
-               <div class="col-lg-4">
-                  <ul class="footer-contact-info">
-                     <li>
-                        <span><i class="icon icon-phone3"></i></span>
-                        <div class="info-wrapper">
-                           <p class="info-title">Call us</p>
-                           <p class="info-subtitle">989-554-6987</p>
-                        </div>
-                     </li>
-                     <!-- li End -->
-                  </ul>
-                  <!-- Footer Info End -->
-               </div>
-               <!-- Col End -->
-               <div class="col-lg-4">
-                  <ul class="footer-contact-info">
-                     <li>
-                        <span><i class="icon icon-envelope"></i></span>
-                        <div class="info-wrapper">
-                           <p class="info-title">Mail us</p>
-                           <p class="info-subtitle">mail@example.com</p>
-                        </div>
-                     </li>
-                     <!-- li End -->
-                  </ul>
-                  <!-- Footer Info End -->
-               </div>
-               <!-- Col End -->
+              <div class="col-sm-8 ">
+               <h2><small></small><span>Contact Us</span></h2>
+               <h2><small>- Get in Touch -</small><span></span></h2>
+              </div>
             </div>
-         </div>
-         <div class="footer-content">
-            <div class="footer-pattern">
-               <img src="images/footer_map.png" alt="">
+            <div class="row mt-50">
+              <div class="col-md-8">
+                <form name="contact-form" id="contact-form" action="http://incognitothemes.com/arcon-landing/php/contact.php" method="POST">
+                  <div class="messages"></div>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group wow fadeTop" data-wow-delay="0.1s">
+                            <label class="sr-only" for="name">Name</label>
+                            <input type="text" name="name" class="form-control" id="name-2" required placeholder="Your Name" data-error="Your Name is Required">
+                            <div class="help-block with-errors mt-20"></div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group wow fadeTop" data-wow-delay="0.2s">
+                            <label class="sr-only" for="email">Email</label>
+                            <input type="email" name="email" class="form-control" id="email-2" placeholder="Your Email" required data-error="Please Enter Valid Email">
+                            <div class="help-block with-errors mt-20"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-group wow fadeTop" data-wow-delay="0.3s">
+                    <label class="sr-only" for="subject">Subject</label>
+                    <input type="text" name="subject" class="form-control" id="subject-2" placeholder="Your Subject">
+                  </div>
+                  <div class="form-group wow fadeTop" data-wow-delay="0.4s">
+                    <label class="sr-only" for="message">Message</label>
+                    <textarea name="message" class="form-control" id="message-2" rows="7" placeholder="Your Message" required data-error="Please, Leave us a message"></textarea>
+                    <div class="help-block with-errors mt-20"></div>
+                  </div>
+                  <div class="wow fadeTop" data-wow-delay="0.5s">
+                      <button type="submit" name="submit" class="btn btn-color btn-circle">Send Mail</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-4">
+              <div class="wow fadeTop" data-wow-delay="0.1s">
+                <h3>Postal Location</h3>
+                <address>
+                PO Box 16122 Toronto Eaton Centre,<br>
+                220 The PATH Toronto, ON M5B 2H1, Canada<br>
+                <abbr title="Phone">P:</abbr> (+1) 613 555-0105<br>
+                <a href="#">arcon@example.com</a>
+                </address>
+               </div>
+               <div class="wow fadeTop" data-wow-delay="0.2s"> 
+                <h3>Global Location</h3>
+                <address>
+                PO Box 16122 Toronto Eaton Centre,<br>
+                220 The PATH Toronto, ON M5B 2H1, Canada<br>
+                <abbr title="Phone">P:</abbr> (+1) 613 555-0105
+                </address>
+                </div>
+                <div class="wow fadeTop" data-wow-delay="0.3s">
+                <h3>Work Timings</h3>
+                <p> <span>Mon - Fri: 10am to 7pm</span> <br>
+                  <span>Sat : 8am to 12pm</span> </p>
+                  </div>
+              </div>
             </div>
-            <div class="row">
-               <div class="col-md-12 col-lg-4">
-                  <div class="tw-footer-info-box">
-                     <a href="index.html" class="footer-logo">
-                        <img src="images/footer_logo.png" alt="footer_logo" class="img-fluid">
-                     </a>
-                     <p class="footer-info-text">
-                        Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                     </p>
-                     <div class="footer-social-link">
-                        <h3>Follow us</h3>
-                        <ul>
-                           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                           <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                           <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                     </div>
-                     <!-- End Social link -->
-                  </div>
-                  <!-- End Footer info -->
-               </div>
-               <!-- End Col -->
-
-               <div class="col-md-12 col-lg-4">
-                  <div class="footer-widget">
-                     <div class="section-heading">
-                        <h3>Useful Links</h3>
-                     </div>
-                     <ul>
-                        <li><a href="#">Search Engine</a></li>
-                        <li><a href="#">Data analysis</a></li>
-                        <li><a href="#">Disital marketing</a></li>
-                        <li><a href="#">Web Analytics</a></li>
-                        <li><a href="#">Social Marketing</a></li>
-                     </ul>
-                     <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Expert Team</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Latest News</a></li>
-                     </ul>
-                  </div>
-                  <!-- End Footer Widget -->
-               </div>
-               <!-- End col -->
-               <div class="col-md-12 col-lg-4">
-                  <div class="footer-widget">
-                     <div class="section-heading">
-                        <h3>Subscribe</h3>
-                     </div>
-                     <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                     <form action="#">
-                        <div class="form-row">
-                           <div class="col tw-footer-form">
-                              <input type="email" class="form-control" placeholder="Email Address">
-                              <button type="submit"><i class="fa fa-send"></i></button>
-                           </div>
-                        </div>
-                     </form>
-                     <!-- End form -->
-                  </div>
-                  <!-- End footer widget -->
-               </div>
-               <!-- End Col -->
-            </div>
-            <!-- End Widget Row -->
-         </div>
-      </div>
+          </div>
+        </section>
+        <!--=== Contact Us End ======-->
+  <!--=== Javascript Plugins ===-->
+  <!-- <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/smoothscroll.js"></script>
+  <script src="assets/js/validator.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/master.js"></script>
+  <script src="assets/js/bootsnav.js"></script> -->
+  <!--=== Javascript Plugins End ===-->
+  
+  </body>
+  
       <!-- End Contact Container -->
 
 
@@ -1885,6 +2026,32 @@
    <script src="js/main.js"></script>
    <!-- <script src="new/index.js"></script> -->
    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});	</script>
+
 </body>
 
 
