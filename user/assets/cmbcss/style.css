@@ -528,7 +528,7 @@
       border-color: #fff;
     }
 
-    /*.owl-carousel {
+    .owl-carousel {
       z-index: auto;
     }
 
@@ -536,7 +536,7 @@
       width: auto !important;
     }
 
-    /* Carousel Black Dots 
+    /* Carousel Black Dots */
 
     .carousel-black-dots .owl-dots button.owl-dot {
       background: #92908E !important;
