@@ -442,7 +442,7 @@ section {
 /* Button */
 .btn {
   font-size: 15px;
-  color: #fff;
+  /* color: #fff; */
   text-transform: uppercase;
   font-weight: 600;
   padding: 16px 36px;
