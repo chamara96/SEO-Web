@@ -796,6 +796,20 @@ li.one{
   margin-right: .1rem;
 }
 
+/* 55555555555555555555555555555555555555555555555555555555555555555 */
+
+.nav li a:first-child:nth-last-child(2):before { 
+  content: ""; 
+  position: absolute; 
+  height: 0; 
+  width: 0; 
+  border: 5px solid transparent; 
+  top: 50% ;
+  right:5px;  
+ }
+
+/* 55555555555555555555555555555555555555555555555555555555555555555555555555 */
+
     /* ==========================
 
                Mega Menu

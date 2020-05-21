@@ -69,11 +69,10 @@ $(function ($) {
       $(this).addClass('active');
    });
    /* DropDown Menu */
-   $("li.nav-item a").on("click", function () {
+  $("li.nav-item a").on("click", function () {
       $(this).parent("li").find(".dropdown-menu").slideToggle();
       // $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
    });
-
    /*Main Slideshow*/
    $(".tw-slider-area").owlCarousel({
       items: 1,
