@@ -1621,7 +1621,7 @@ li.dropdown:hover .tw-mega-menu {
   transition: all 0.3s linear;
 }
 .tw-work-process:hover p {
-  color: #FFB72F;
+  color: rgb(0, 0, 0);
 }
 
 .process-wrapper {
@@ -4949,4 +4949,113 @@ ul.comments-reply .comment-body {
 
 .bg-violet {
   background-color: #BA01FF;
+}
+
+/* gradients */
+
+.gradient-1 {
+  background-image: -webkit-linear-gradient(110deg, #31c8b1 10%, #4ec7ff 90%), url("images/background/diamond_upholstery.png");
+  background-image: -moz-linear-gradient(110deg, #31c8b1 10%, #4ec7ff 90%), url("images/background/diamond_upholstery.png");
+  background-image: -o-linear-gradient(110deg, #31c8b1 10%, #4ec7ff 90%), url("images/background/diamond_upholstery.png");
+  background-image: linear-gradient(110deg, #31c8b1 10%, #4ec7ff 90%), url("images/background/diamond_upholstery.png");
+  background-image: -ms-linear-gradient(110deg, #31c8b1 10%, #4ec7ff 90%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-1, endColorstr=$combo-2, GradientType=1); */
+  background-blend-mode: multiply;
+  color: #fff;
+}
+
+.gradient-1.promo a {
+  color: #02afff
+}
+
+.gradient-1.promo a:hover {
+  color: #009ee7
+}
+
+.gradient-2 {
+  background-image: -webkit-linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
+  background-image: -moz-linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
+  background-image: -o-linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
+  background-image: linear-gradient(110deg, #49C4A4 10%, #97b832 90%), url("images/background/diamond_upholstery.png");
+  background-image: -ms-linear-gradient(110deg, #49C4A4 10%, #97b832 90%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-3, endColorstr=$combo-4, GradientType=1); */
+  background-blend-mode: multiply;
+  color: #fff
+}
+
+.gradient-3 {
+  background-image: -webkit-linear-gradient(110deg, #38b6b8 10%, #d155ff 90%), url("images/background/diamond_upholstery.png");
+  background-image: -moz-linear-gradient(110deg, #38b6b8 10%, #d155ff 90%), url("images/background/diamond_upholstery.png");
+  background-image: -o-linear-gradient(110deg, #38b6b8 10%, #d155ff 90%), url("images/background/diamond_upholstery.png");
+  background-image: linear-gradient(110deg, #38b6b8 10%, #d155ff 90%), url("images/background/diamond_upholstery.png");
+  background-image: -ms-linear-gradient(left, #38b6b8, #d155ff);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-5, endColorstr=$combo-6, GradientType=1); */
+  background-blend-mode: multiply;
+  color: #fff
+}
+
+.gradient-4 {
+  background-image: -webkit-linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
+  background-image: -moz-linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
+  background-image: -o-linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
+  background-image: linear-gradient(110deg, #d4b548 10%, #ff577b 90%), url("images/background/diamond_upholstery.png");
+  background-image: -ms-linear-gradient(110deg, #d4b548 10%, #ff577b 90%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-7, endColorstr=$combo-8, GradientType=1); */
+  background-blend-mode: multiply;
+  color: #fff
+}
+
+.gradient-5 {
+  background-image: -webkit-linear-gradient(110deg, #53c1d1 10%, #6370d7 90%), url("images/background/diamond_upholstery.png");
+  background-image: -moz-linear-gradient(110deg, #53c1d1 10%, #6370d7 90%), url("images/background/diamond_upholstery.png");
+  background-image: -o-linear-gradient(110deg, #53c1d1 10%, #6370d7 90%), url("images/background/diamond_upholstery.png");
+  background-image: linear-gradient(110deg, #53c1d1 10%, #6370d7 90%), url("images/background/diamond_upholstery.png");
+  background-image: -ms-linear-gradient(110deg, #53c1d1 10%, #6370d7 90%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-9, endColorstr=$combo-10, GradientType=1); */
+  background-blend-mode: multiply;
+  color: #fff
+}
+
+.gradient-6 {
+  background-image: -webkit-linear-gradient(110deg, #e472dd 10%, #5b7ddf 90%), url("images/background/diamond_upholstery.png");
+  background-image: -moz-linear-gradient(110deg, #e472dd 10%, #5b7ddf 90%), url("images/background/diamond_upholstery.png");
+  background-image: -o-linear-gradient(110deg, #e472dd 10%, #5b7ddf 90%), url("images/background/diamond_upholstery.png");
+  background-image: linear-gradient(110deg, #e472dd 10%, #5b7ddf 90%), url("images/background/diamond_upholstery.png");
+  background-image: -ms-linear-gradient(110deg, #e472dd 10%, #5b7ddf 90%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-11, endColorstr=$combo-12, GradientType=1); */
+  background-blend-mode: multiply;
+  color: #fff
+}
+
+.gradient-7 {
+  background-image: -webkit-linear-gradient(110deg, #42d3d8 10%, #3c69da 90%), url("images/background/diamond_upholstery.png");
+  background-image: -moz-linear-gradient(110deg, #42d3d8 10%, #3c69da 90%), url("images/background/diamond_upholstery.png");
+  background-image: -o-linear-gradient(110deg, #42d3d8 10%, #3c69da 90%), url("images/background/diamond_upholstery.png");
+  background-image: linear-gradient(110deg, #42d3d8 10%, #3c69da 90%), url("images/background/diamond_upholstery.png");
+  background-image: -ms-linear-gradient(110deg, #42d3d8 10%, #3c69da 90%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-13, endColorstr=$combo-14, GradientType=1); */
+  background-blend-mode: multiply;
+  color: #fff
+}
+
+.gradient-8 {
+  background-image: -webkit-linear-gradient(110deg, #da59a5 10%, #754fa5 90%), url("images/background/diamond_upholstery.png");
+  background-image: -moz-linear-gradient(110deg, #da59a5 10%, #754fa5 90%), url("images/background/diamond_upholstery.png");
+  background-image: -o-linear-gradient(110deg, #da59a5 10%, #754fa5 90%), url("images/background/diamond_upholstery.png");
+  background-image: linear-gradient(110deg, #da59a5 10%, #754fa5 90%), url("images/background/diamond_upholstery.png");
+  background-image: -ms-linear-gradient(110deg, #da59a5 10%, #754fa5 90%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-15, endColorstr=$combo-16, GradientType=1); */
+  background-blend-mode: multiply;
+  color: #fff
+}
+
+.gradient-9 {
+  background-image: -webkit-linear-gradient(110deg, #83C658 10%, #4FAA4E 90%), url("images/background/diamond_upholstery.png");
+  background-image: -moz-linear-gradient(110deg, #83C658 10%, #4FAA4E 90%), url("images/background/diamond_upholstery.png");
+  background-image: -o-linear-gradient(110deg, #83C658 10%, #4FAA4E 90%), url("images/background/diamond_upholstery.png");
+  background-image: linear-gradient(110deg, #83C658 10%, #4FAA4E 90%), url("images/background/diamond_upholstery.png");
+  background-image: -ms-linear-gradient(110deg, #83C658 10%, #4FAA4E 90%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$combo-17, endColorstr=$combo-18, GradientType=1); */
+  background-blend-mode: multiply;
+  color: #fff
 }
