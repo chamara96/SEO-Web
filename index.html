@@ -54,6 +54,36 @@
 
 
    <style>
+      .section {
+         /* min-height: 100vh; */
+         min-height: 800px;
+         position: relative;
+         text-align: center;
+         font-family: sans-serif, arial;
+         margin: 0;
+         /* scroll-snap-type: y mandatory; */
+         scroll-snap-align: start;
+      }
+
+      .dropdown-content {
+         display: none;
+         position: absolute;
+         padding-top: 30px;
+         /* margin-top: 30px; */
+         border-radius: 7px;
+         background-color: rgba(0, 0, 0, 0.2);
+         /* min-width: 160px; */
+         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+         z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+         display: block;
+         /* background-color: transparent; */
+      }
+
+
+
       html {
          /* font-family: sans-serif; */
          /* scroll-snap-type: mandatory; */
@@ -61,8 +91,58 @@
          /* this not working on safari */
          scroll-behavior: smooth;
          /* scroll-snap-points-y: repeat(100vh); */
-         scroll-snap-type: y mandatory;
+         /* scroll-snap-type: y mandatory; */
 
+      }
+
+      .owl-theme .owl-controls .owl-page {
+         display: inline-block;
+      }
+
+      .owl-theme .owl-controls .owl-page span {
+         background: none repeat scroll 0 0 #869791;
+         border-radius: 20px;
+         display: block;
+         height: 12px;
+         margin: 5px 7px;
+         opacity: 0.5;
+         width: 12px;
+      }
+
+      .tw-slider-area .owl-dots {
+         position: absolute;
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -moz-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-align: center;
+         -webkit-align-items: center;
+         -moz-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         -webkit-box-pack: center;
+         -webkit-justify-content: center;
+         -moz-box-pack: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+         width: 100%;
+         /* bottom: -30px; */
+      }
+
+      .tw-slider-area .owl-dots button.owl-dot {
+         display: inline-block;
+         width: 7px;
+         height: 7px;
+         background: #362F2D;
+         margin: 4px;
+         border-radius: 50%;
+      }
+
+      .tw-slider-area .owl-dots button.owl-dot.active {
+         width: 11px;
+         height: 11px;
+         background: #fff;
       }
 
       /* Navigations */
@@ -214,15 +294,58 @@
          transform: translate(-50%, -50%);
       }
 
-      div#logo_cw_line {
-         width: 128px;
-         height: 121px;
+      svg#logo_img {
+         width: 360px;
+         height: 360px;
+         margin: 0 auto;
+         /* display: block; */
+
+         /* height: 360px; */
+         opacity: 0;
+         /* display: none; */
+
+         animation:
+            opacity_anime 0.1s 0.5s forwards,
+            resize1 2s 5s forwards;
+
+         /* animation-name: resize1;
+         animation-duration: 2s;
+         animation-timing-function: cubic-bezier(1, 0, 0, 1);
+         animation-delay: 5s;
+         animation-fill-mode: forwards; */
+      }
+
+      #logo_img_div {
          text-align: center;
          z-index: 100;
          /* visibility: hidden; */
-
          position: fixed;
          top: 10%;
+         left: 50%;
+
+         -ms-transform: translate(-50%, -50%);
+         /* IE 9 */
+         -webkit-transform: translate(-50%, -50%);
+         /* Safari */
+         transform: translate(-50%, -50%);
+      }
+
+      #logo_img_xxx {
+         height: 80px;
+         opacity: 0;
+         animation: second_opacity 5s 8s forwards;
+      }
+
+      div#logo_cw_line {
+         /* width: 128px;
+         height: 121px; */
+         /* width: 256px;
+         height: 242px; */
+         text-align: center;
+         z-index: 100;
+         /* visibility: hidden; */
+         position: fixed;
+         top: 50%;
          left: 50%;
 
          -ms-transform: translate(-50%, -50%);
@@ -236,7 +359,71 @@
      -webkit-transform: scale(0.85,0.85);
      transform:scale(0.85,0.85);*/
 
+         animation-name: slide;
+         animation-duration: 2s;
+         animation-timing-function: cubic-bezier(1, 0, 0, 1);
+         animation-delay: 5s;
+         animation-fill-mode: forwards;
+
       }
+
+      /* div#logo_cw_line:hover {
+         animation-name: slide;
+         animation-duration: 2s;
+         animation-timing-function: ease-in-out;
+         animation-delay: .5s;
+         animation-fill-mode: forwards;
+      } */
+
+
+      @keyframes slide {
+         0% {
+            top: 50%;
+            left: 50%;
+         }
+
+         100% {
+            left: 50%;
+            top: 10%;
+         }
+      }
+
+      @keyframes resize1 {
+         0% {
+            width: 360px;
+            height: 360px;
+         }
+
+         100% {
+            width: 80px;
+            height: 80px;
+         }
+      }
+
+      @keyframes opacity_anime {
+         0% {
+            opacity: 0;
+         }
+
+         100% {
+            opacity: 1;
+         }
+      }
+
+      @keyframes second_opacity {
+         0% {
+            opacity: 0;
+         }
+
+         100% {
+            opacity: 1;
+         }
+      }
+
+
+
+
+
 
       @media screen and (min-width: 767px) {
 
@@ -278,14 +465,7 @@
 
 
 
-         .section {
-            min-height: 800px;
-            position: relative;
-            text-align: center;
-            font-family: sans-serif, arial;
-            margin: 0;
-            scroll-snap-align: start;
-         }
+
 
          .nav {
             display: block;
@@ -324,6 +504,27 @@
             background: rgba(0, 0, 0, 0.2);
          }
 
+         .dropdown-content a:hover {
+            /* background: rgba(0, 0, 0, 0.2); */
+            background-color: transparent;
+            text-decoration: underline;
+            font-size: 11px;
+         }
+
+         .dropdown-content a {
+            /* background: rgba(0, 0, 0, 0.2); */
+            /* background-color: transparent;
+            text-decoration: underline; */
+            font-size: 14px;
+            float: right;
+            /* color: black; */
+            /* padding: 12px 16px; */
+            text-decoration: none;
+            display: block;
+            text-align: left;
+         }
+
+
          #mobile_head {
             visibility: hidden;
          }
@@ -342,6 +543,50 @@
             visibility: visible;
 
          }
+      }
+
+
+      #canvasOne {
+         /* position: absolute; */
+         /* z-index: 1; */
+         /* margin-left: -450px; */
+         display: none;
+         /* position: absolute; */
+         top: 0px;
+         left: 0px;
+         z-index: 3;
+      }
+
+      .slider-items {
+         display: none;
+      }
+
+      #splashtag {
+         /* position: absolute; */
+         /* z-index: 10; */
+         /* margin-left: 34%;
+         margin-top: 17%; */
+         font-size: 60px;
+         max-width: 270px;
+         line-height: 1;
+         text-align: center;
+         color: black;
+         font-weight: 700;
+         display: none;
+         /* font-size: 70px; */
+         position: absolute;
+         top: 280px;
+         left: 50%;
+         z-index: 1;
+
+      }
+
+      path {
+         fill: none;
+         stroke: #000;
+         stroke-width: 100px;
+         /*set dashoffset to 0 so that if JS is off the image will still appear => Progressive Enhancement*/
+         stroke-dashoffset: 0;
       }
    </style>
 
@@ -435,8 +680,20 @@
 
 
       <a href="#">
+         <div id="logo_img_div">
+            <img id="logo_img_xxx" src="images/sss.png" alt="">
+         </div>
          <div id="logo_cw_line">
-            <img height="80px" src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="">
+            <svg id="logo_img" version="1.1" xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1760px" height="2160px"
+               viewBox="0 0 9780 12000" preserveAspectRatio="xMidYMid meet">
+               <g id="layer101" fill="none" stroke-width="5" stroke="black">
+                  <path
+                     d="M4827.14 250.61C4856.27 246.78 4887.77 250 4917.14 250C4989.11 250 5061.01 252.74 5132.86 252.86C5244.69 253.04 5357.34 256.22 5468.57 267.38C5603.89 280.96 5740.13 310.24 5872.86 339.39C6017.2 371.1 6161.71 403.48 6302.86 447.18C6383.9 472.27 6462.39 505.37 6541.43 535.98C6651.29 578.54 6761.47 621.27 6868.57 670.44C6961.56 713.13 7050.39 764.64 7140 813.85C7361.04 935.25 7571.73 1071.34 7770 1227.44C7936.76 1358.74 8092.7 1506.23 8237.27 1661.43C8317.41 1747.46 8398.93 1832.1 8473.93 1922.86C8633.04 2115.44 8772.46 2319.83 8897.74 2535.71C8924.66 2582.09 8954.06 2627.14 8979.56 2674.29C9004.44 2720.3 9026.16 2768.61 9048.94 2815.71C9086.21 2892.76 9124.46 2969.4 9157.13 3048.57C9183.81 3113.27 9205.9 3180.2 9230.6 3245.71C9273.06 3358.29 9316.39 3469.9 9349.39 3585.71C9381.83 3699.53 9402.81 3816.93 9426 3932.86C9457.96 4092.7 9488.73 4254.39 9499.87 4417.14C9511.4 4585.49 9508.44 4755.6 9504.3 4924.29C9500.04 5098.36 9497.1 5272.36 9479.76 5445.71C9466.63 5577 9438.89 5706.99 9410.6 5835.71C9382.76 5962.51 9354.23 6090.23 9315.67 6214.29C9213.4 6543.39 9062.6 6854.07 8908.93 7161.43C8827.07 7325.13 8741.8 7485.91 8652.66 7645.71C8629.43 7687.36 8606.19 7729.01 8579.53 7768.57C8571.93 7779.84 8561.93 7804.71 8548.57 7809.23C8526.11 7816.83 8507.54 7794.64 8494.7 7780C8457.07 7737.1 8425.34 7688.09 8390.5 7642.86C8269.31 7485.59 8147.96 7328.19 8024.29 7172.86C7997.6 7139.36 7970.47 7107.13 7946.67 7071.43C7929.67 7045.94 7916.86 7018.73 7930.44 6988.57C7947.2 6951.39 7975.51 6919.11 7998.53 6885.71C8031.29 6838.19 8060.67 6787.9 8088.13 6737.14C8203.49 6523.86 8304.79 6305.77 8386.16 6077.14C8440.97 5923.11 8477.19 5761.51 8509.21 5601.43C8524.26 5526.2 8544.49 5451.97 8553.89 5375.71C8578.11 5178.99 8580.59 4976.66 8575.73 4778.57C8572 4626.13 8568.09 4474.34 8548.17 4322.86C8533.59 4211.93 8507.34 4103.19 8482.36 3994.29C8462.89 3909.39 8444.4 3823.23 8418.53 3740C8405.61 3698.43 8388.33 3658.34 8374.29 3617.14C8353.6 3556.43 8334.64 3494.99 8309.99 3435.71C8240.43 3268.56 8155.7 3107.9 8064.89 2951.43C7994.6 2830.31 7922.36 2708.61 7837.31 2597.14C7701.19 2418.73 7545.37 2255.43 7381.43 2102.73C7263.41 1992.81 7140.79 1885.27 7008.57 1792.46C6873.71 1697.79 6731.07 1614.16 6585.71 1537.46C6541.01 1513.87 6497.39 1487.26 6451.43 1466.16C6389.77 1437.84 6325.8 1414.33 6262.86 1389.36C6232.07 1377.14 6202.41 1362.4 6171.43 1350.61C6067.33 1311 5960.13 1277.79 5852.86 1247.97C5806.69 1235.13 5761.03 1220.23 5714.29 1209.5C5649.7 1194.68 5583.81 1186.69 5518.57 1175.36C5480.8 1168.79 5443.79 1158.39 5405.71 1153.26C5331.14 1143.21 5256.3 1140.71 5181.43 1135.59C5034.16 1125.5 4886.16 1124.94 4738.57 1128.55C4602.54 1131.88 4466.57 1138.35 4331.43 1156.12C4288.17 1161.8 4245.81 1172.18 4202.86 1179.64C4160.11 1187.07 4116.66 1191.25 4074.29 1200.61C3943.7 1229.45 3813.96 1271.06 3687.14 1313.33C3621.43 1335.24 3557.6 1360.69 3492.86 1385.11C3467.31 1394.74 3440.73 1401.6 3415.71 1412.66C3403.06 1418.26 3392.53 1427.4 3380 1433.04C3357.14 1443.36 3332.49 1449.11 3310 1460.36C3292.49 1469.11 3277.61 1482.1 3260 1490.9C3174.3 1533.74 3087.8 1574.76 3004.29 1622.03C2967.54 1642.84 2933.07 1666.79 2897.14 1688.84C2884.19 1696.8 2869.9 1702.29 2857.14 1710.5C2765.2 1769.67 2678.26 1837.39 2592.86 1905.71C2430.56 2035.57 2276.91 2177.2 2137.39 2331.43C1983.9 2501.07 1841.87 2682.84 1720.61 2877.14C1688.54 2928.51 1661.19 2982.51 1632.41 3035.71C1607.67 3081.49 1580.13 3126.39 1556.87 3172.86C1546 3194.59 1538.79 3218.11 1528.2 3240C1517.4 3262.31 1502.23 3281.67 1491.87 3304.29C1427.39 3445.11 1377.25 3593.86 1331.39 3741.43C1320.5 3776.46 1306.15 3810.37 1296.32 3845.71C1255.22 3993.59 1227.68 4145.37 1205.33 4297.14C1195.26 4365.47 1182.63 4434.14 1175.96 4502.86C1164.35 4622.34 1164.29 4742.74 1164.29 4862.86C1164.29 4973.19 1164.03 5084.51 1174.53 5194.29C1182.58 5278.49 1196.43 5362.14 1209.39 5445.71C1231.9 5590.81 1257.44 5735.76 1297.75 5877.14C1321.14 5959.17 1350.44 6038.39 1379.01 6118.57C1482.81 6409.97 1620.93 6689.31 1790.49 6948.57C1888.64 7098.63 2005.53 7237.2 2125.47 7370C2293.39 7555.9 2474.84 7726.64 2674.29 7878.74C2753.49 7939.13 2838.26 7992.47 2922.86 8044.89C3007.69 8097.44 3094.17 8149.57 3182.86 8195.34C3266.9 8238.71 3354.3 8275.47 3441.43 8312.03C3502.21 8337.54 3562.09 8366.86 3624.29 8389.01C3653.53 8399.43 3683.57 8403.73 3712.86 8413.13C3733.56 8419.79 3753.37 8429.19 3774.29 8435.67C3877.7 8467.81 3983.46 8494.96 4088.57 8520.9C4147.13 8535.34 4206.5 8542.79 4265.71 8553.46C4326.39 8564.4 4385.67 8578.19 4447.14 8584.04C4540.66 8592.94 4634.79 8591.67 4728.57 8595.77C4913.61 8603.87 5102.9 8603.9 5287.14 8585.47C5353.66 8578.83 5418.61 8565.31 5484.29 8553.46C5536.39 8544.07 5589.87 8539.36 5641.43 8527.97C5677.07 8520.1 5711.96 8507.53 5747.14 8497.74C5795.09 8484.41 5843.57 8473.04 5891.43 8459.4C5934.23 8447.2 5975.94 8431.33 6018.57 8419.19C6057.11 8408.2 6096.56 8399.9 6134.29 8386.14C6244.31 8346.04 6353.5 8296.99 6458.57 8245.37C6497.91 8226.03 6545.07 8214.13 6581.43 8190C6603.71 8175.2 6629.09 8148.5 6658.57 8164.17C6684.91 8178.17 6701.53 8216.39 6718.37 8240C6761.47 8300.43 6805.86 8360.04 6847.63 8421.43C6957.91 8583.5 7072.31 8743.39 7186.33 8902.86C7217.6 8946.6 7251.8 8988.29 7281.9 9032.86C7325.21 9097 7373.97 9157.29 7417.14 9221.43C7429.97 9240.5 7459.61 9270.92 7456.2 9295.71C7453.2 9317.64 7430.33 9339.31 7416.79 9355.71C7382.86 9396.8 7348.59 9437.4 7313.1 9477.14C7179.26 9627.03 7043.17 9774.81 6904.34 9920C6743.77 10087.93 6579.36 10252.34 6411.43 10412.92C6266.16 10551.83 6123.49 10693.59 5974.29 10828.33C5916.04 10880.94 5854.96 10930.37 5795.71 10981.83C5679.33 11082.9 5564.47 11185.71 5442.86 11280.6C5319.81 11376.61 5201.93 11479.6 5080 11577.14L4981.43 11656.29C4960.37 11673.13 4940.5 11692.13 4914.29 11700.69C4863 11717.42 4823.21 11682.6 4785.71 11652.86C4744.69 11620.33 4701.54 11591.23 4660 11559.5C4645.66 11548.56 4628.46 11542.13 4614.29 11531.37C4574.67 11501.3 4539.31 11465.53 4500 11434.89C4456.93 11401.33 4411.81 11370.6 4368.57 11337.3C4245.41 11242.47 4125.07 11143.99 4005.71 11044.4C3468.07 10595.81 2959.59 10114.73 2491.19 9594.29C2431.57 9528.04 2368.81 9464.4 2310.4 9397.14C2274.27 9355.54 2242.5 9310.49 2206.76 9268.57C2170.36 9225.89 2131 9185.42 2096.13 9141.43C2059.01 9094.61 2024.86 9045.6 1988.16 8998.57C1905.86 8893.13 1819.57 8790.69 1738.4 8684.29C1684.67 8613.86 1634.84 8540.84 1583.69 8468.57C1557.1 8431.03 1528.77 8394.39 1503.84 8355.71C1483.84 8324.69 1466.6 8292.19 1446.19 8261.43C1415.96 8215.89 1383.52 8171.79 1353.85 8125.71C1331.22 8090.6 1311.32 8053.67 1289.01 8018.57C1278.36 8001.83 1263.48 7988.34 1253.36 7971.43C1245.15 7957.73 1239.5 7942.41 1231.41 7928.57C1070.87 7653.6 919.58 7373.57 789.55 7082.86C730.62 6951.1 671.65 6819.53 620.61 6684.29C606.35 6646.51 598.26 6606.6 584.73 6568.57C578.2 6550.23 568.19 6533.64 560.86 6515.71C546.26 6479.97 534.35 6442.59 522.89 6405.71C502.96 6341.56 482.7 6276.37 465.55 6211.43C459.06 6186.87 456.83 6161.6 450.38 6137.14C421.48 6027.54 390.65 5917.91 366.32 5807.14C349.17 5729.04 339.03 5650.11 325.36 5571.43C318.15 5529.96 308.75 5488.89 303.26 5447.14C272 5209.41 274.29 4966.59 277.14 4727.14C279.13 4559.91 277.81 4391.93 297.55 4225.71C304.43 4167.81 318.96 4111.7 328.46 4054.29C338.85 3991.44 344.22 3927.77 358.91 3865.71C371.76 3811.4 390.2 3758.49 403.75 3704.29C412.66 3668.64 419.32 3632.59 429.18 3597.14C462.85 3476.03 506.72 3358.09 549.38 3240C579.86 3155.64 608.61 3070.33 646.16 2988.57C683.74 2906.71 726.93 2827.1 768.2 2747.14C796.95 2691.44 821.93 2634.33 853.46 2580C865.96 2558.47 881.97 2539.66 895.11 2518.57C909.21 2495.93 920.05 2471.5 933.72 2448.57C954.09 2414.4 977.47 2382.01 999.01 2348.57C1017.96 2319.16 1031.98 2285.86 1051.47 2257.14C1068.69 2231.79 1091.51 2210.61 1109.39 2185.71C1145.41 2135.56 1183.52 2087.07 1219.78 2037.14C1246.84 1999.89 1271.26 1961.53 1300.61 1925.71C1367.15 1844.5 1442.24 1770.63 1512.61 1692.86C1608.37 1587.03 1713.63 1493.31 1820 1398.33C1861.03 1361.7 1900.6 1322.94 1942.86 1287.76C2002.24 1238.34 2065.76 1194.15 2127.14 1147.31C2172.47 1112.72 2217.19 1076.44 2264.29 1044.33C2301.46 1018.98 2340.73 996.25 2378.57 971.87C2404.74 955.01 2430.14 936.07 2457.14 920.61C2483.4 905.58 2511 893.14 2537.14 877.97C2591.51 846.41 2644.66 813.23 2700 783.3C2744.53 759.22 2791.54 738.84 2837.14 716.77C2932.36 670.7 3026.23 620.78 3124.29 580.86C3163.93 564.72 3205.5 553.01 3245.71 537.97C3308.13 514.63 3369.31 487.94 3432.86 467.63C3740.46 369.33 4059.61 303.54 4380 264.69C4493.04 250.99 4607.86 256.46 4721.43 251.48C4756.31 249.96 4792.51 255.15 4827.14 250.61M4832.86 1773.46C4857.31 1770.26 4882.69 1773.99 4907.14 1774.29C4957.27 1774.87 5007.14 1774.9 5057.14 1777.09C5149.87 1781.14 5242.33 1787.63 5334.29 1801.81C5387.16 1809.99 5439.21 1823.64 5491.43 1835.11C5536.17 1844.94 5581.47 1852.53 5625.71 1864.5C5661.9 1874.29 5695.74 1889.66 5731.43 1900.4C5755.96 1907.79 5781.31 1911.49 5805.71 1919.53C5870.94 1941.01 5934.04 1969.04 5997.14 1995.93C6101.14 2040.23 6203.84 2088.4 6301.43 2145.73C6319.31 2156.23 6334.24 2170.79 6351.44 2181.43C6371.76 2193.97 6396.2 2201.86 6417.14 2214.57C6479.4 2252.37 6534.26 2297.47 6592.86 2340.1C6608.96 2351.81 6627.99 2358.83 6644.29 2371.26C6715.16 2425.31 6780.6 2486.36 6845.71 2547.01C6984.46 2676.26 7114.96 2813.29 7230.17 2964.29C7321.74 3084.31 7398.77 3211.79 7470.44 3344.29C7486.39 3373.76 7504.89 3401.73 7520.31 3431.43C7557.4 3502.87 7590.09 3578.23 7620.57 3652.86C7665.27 3762.33 7699.03 3876.07 7730.21 3990C7833.39 4366.9 7868.54 4764.53 7822.44 5152.86C7815.51 5211.24 7803.24 5267.96 7793.21 5325.71C7784.23 5377.47 7779.3 5430.1 7767.97 5481.43C7747.43 5574.43 7717.59 5666.69 7688.1 5757.14C7656.07 5855.4 7621.3 5954.54 7578.13 6048.57C7567.93 6070.79 7551.42 6088.59 7540.86 6110C7524.06 6144.1 7512.14 6180.46 7493.84 6214.29C7463.99 6269.49 7437.5 6327.4 7405.7 6381.43C7363.87 6452.47 7314.79 6519.66 7267.54 6587.14C7244.7 6619.79 7221.03 6652.59 7195.1 6682.86C7184.91 6694.74 7163.3 6712.1 7161.44 6728.57C7160.16 6739.94 7172.14 6751.4 7178.17 6760C7195.99 6785.46 7214.06 6810.84 7232.67 6835.71C7305.99 6933.64 7378.56 7032.01 7453.69 7128.57C7487.4 7171.93 7517.63 7217.81 7550.93 7261.43C7722.9 7486.59 7891.96 7714.06 8063.04 7940C8091.1 7977.04 8120.87 8012.81 8148.71 8050C8170.54 8079.14 8188.89 8109.66 8213.09 8137.14C8234.71 8161.73 8276.34 8200.54 8276.01 8235.71C8275.93 8244.24 8269.14 8253.04 8264.71 8260C8254.29 8276.43 8243.19 8292.39 8232.39 8308.57C8189.2 8373.21 8137.34 8432.7 8096.33 8498.57C8034.51 8597.8 7953 8682.76 7888.57 8780C7870.36 8807.51 7849.04 8832.39 7825.71 8855.71C7817.43 8864 7806.77 8877.46 7794.29 8879C7781.54 8880.57 7772.27 8869.46 7764.29 8861.43C7743.81 8840.86 7725.57 8817.17 7707.74 8794.29C7692.34 8774.51 7679.53 8752.83 7664.43 8732.86C7605.89 8655.4 7545.61 8579.16 7487.33 8501.43C7267.36 8208.14 7046.11 7916.01 6826.24 7622.86C6767.71 7544.81 6707.84 7467.86 6649.1 7390C6632.3 7367.71 6614.56 7346.61 6596.13 7325.71C6587.26 7315.66 6575.96 7300.81 6562.86 7296.04C6555.6 7293.4 6546.14 7298.74 6540 7302.24C6522.84 7312 6507.31 7325.61 6491.43 7337.31C6474.17 7350.01 6458.01 7365.26 6440 7376.8C6392.83 7407.01 6340.29 7431.81 6291.43 7459.6C6176.53 7524.93 6054.79 7585.5 5931.43 7633.13C5872.34 7655.94 5811.54 7674.44 5751.43 7694.29C5666.54 7722.3 5581.34 7750.96 5494.29 7771.6C5342.09 7807.67 5183.76 7816.64 5028.57 7827.27C4892.63 7836.57 4755.81 7833.71 4620 7824.41C4538.4 7818.83 4457.04 7814.26 4375.71 7803.87C4279.2 7791.56 4182.63 7770.61 4088.57 7745.89C4068.04 7740.49 4046.73 7735.09 4027.14 7726.81C4014.57 7721.5 4003.09 7713.59 3990 7709.6C3971.73 7704.03 3952.7 7701.79 3934.29 7696.53C3887.06 7683.07 3840.39 7666.84 3794.29 7649.93C3711.77 7619.64 3631.9 7580.04 3552.86 7541.8C3521.83 7526.79 3486.91 7516.54 3457.14 7499.51C3413.96 7474.83 3372.63 7446.13 3330 7420.5C3296.21 7400.19 3260.53 7383.97 3227.14 7362.79C3185.54 7336.39 3146.93 7304.96 3107.14 7275.93C2932.69 7148.67 2771.56 7001.57 2626.9 6841.43C2345.89 6530.3 2126.84 6157.09 1999.06 5757.14C1992.46 5736.49 1989.83 5714.97 1983.66 5694.29C1974.19 5662.49 1959.99 5632.07 1950.6 5600C1925.66 5514.73 1907 5424.67 1891.79 5337.14C1847.1 5079.9 1840.56 4816.89 1858.44 4557.14C1871.34 4369.89 1900.23 4181.21 1950.6 4000C1956.6 3978.41 1962.69 3956.69 1970.61 3935.71C1974.5 3925.41 1981.09 3916.24 1984.23 3905.71C1991.94 3879.87 1994.76 3852.96 2003.36 3827.14C2168.44 3331.94 2466.09 2886.49 2847.14 2531.56C2927.36 2456.84 3015.07 2394.43 3102.86 2329.77C3356.16 2143.21 3637.56 1999.53 3937.14 1903.8C4040.83 1870.66 4144.26 1840.96 4251.43 1820.87C4383.66 1796.1 4517.34 1783.07 4651.43 1777.2C4687.44 1775.63 4723.97 1774.29 4760 1774.29C4783.9 1774.29 4809.16 1776.57 4832.86 1773.46M4804.29 2587.74C4834.36 2583.8 4867 2587.2 4897.14 2588.51C4923.79 2589.69 4950.54 2588.79 4977.14 2589.94C5074.37 2594.2 5171.09 2598.59 5267.14 2616.59C5328.66 2628.11 5393.19 2644.29 5452.86 2663.34C5476.71 2670.97 5499.11 2682.09 5522.86 2690C5630.01 2725.76 5735.04 2765.56 5835.71 2817.51C6013.99 2909.53 6171.71 3031.53 6320 3165.47C6342.66 3185.94 6368.11 3204.69 6389.87 3225.86C6405.63 3241.21 6417.61 3260.44 6431.86 3277.14C6463.66 3314.44 6496.66 3350.63 6527.74 3388.57C6638.53 3523.73 6722.64 3671.39 6799.96 3827.14C6809.43 3846.21 6822.06 3863.36 6830.99 3882.86C6853.94 3932.99 6869.97 3985.69 6888.91 4037.14C6893.76 4050.29 6903.21 4060.83 6907.61 4074.29C6925.47 4129 6936.74 4186.97 6950.53 4242.86C6970.07 4322 6990.94 4401.83 7001.03 4482.86C7018.17 4620.64 7018.99 4761.43 7012.91 4900C7009.2 4984.99 7006.43 5069.74 6995.31 5154.29C6986.97 5217.69 6970.31 5280.9 6954.81 5342.86C6936.23 5417.2 6917.59 5492.01 6891.87 5564.29C6880.71 5595.63 6864.56 5623.7 6852.07 5654.29C6845.99 5669.2 6843 5685.17 6836.74 5700C6784.53 5823.49 6720.86 5942.96 6646.19 6054.29C6463.14 6327.2 6218.44 6554.36 5937.14 6723.14C5873.56 6761.3 5808.89 6801.44 5741.43 6832.41C5726.67 6839.19 5710.79 6842.79 5695.71 6848.86C5665.47 6861.06 5636.36 6875.83 5605.71 6887.07C5579.53 6896.67 5552.17 6902.24 5525.71 6910.96C5499.5 6919.59 5474.99 6932.44 5448.57 6940.4C5349.16 6970.34 5245.71 6990.36 5142.86 7003.89C5062.41 7014.46 4982.24 7013.66 4901.43 7017.2C4715 7025.36 4527.11 7013.39 4345.71 6968.03C4078.1 6901.13 3818.84 6787.01 3594.29 6626.53C3559.54 6601.7 3527.41 6573.51 3494.29 6546.59C3330.96 6413.86 3184.64 6261.37 3063.89 6088.57C2907.29 5864.47 2795.61 5608.86 2729.47 5344.29C2719.4 5304.01 2707.14 5263.64 2699.44 5222.86C2677.54 5106.74 2677.94 4988.81 2672.8 4871.43C2670.16 4810.97 2671.59 4750.39 2674.23 4690C2678.77 4586.19 2683.51 4482.7 2702.03 4380C2714.71 4309.73 2733.99 4240.3 2752.64 4171.43C2768.13 4114.27 2782.53 4055.63 2802.93 4000C2810.14 3980.33 2822.7 3964.44 2830.76 3945.71C2836.74 3931.79 2839.27 3916.87 2845.51 3902.86C2871.39 3844.77 2902.2 3788.73 2932.41 3732.86C2958.91 3683.86 2983 3632.74 3012.93 3585.71C3019.5 3575.41 3028.41 3567.19 3035.2 3557.14C3052.03 3532.21 3066.2 3505.74 3084.11 3481.43C3168.19 3367.37 3266.39 3264.8 3368.57 3167.09C3441.4 3097.44 3518.29 3024.13 3601.43 2966.74C3611.23 2959.99 3622.79 2957.04 3632.86 2950.77C3662.9 2932.06 3692.31 2913.01 3722.86 2894.86C3751.14 2878.03 3776.43 2857.71 3805.71 2841.87C3914.81 2782.86 4028.56 2735.77 4145.71 2695.6C4169.46 2687.46 4192.01 2675.87 4215.71 2667.89C4251.53 2655.81 4289.1 2649.34 4325.71 2640.19C4354.5 2632.97 4382.44 2622.67 4411.43 2616.31C4502.99 2596.23 4601.07 2594.14 4694.29 2590.06C4730.4 2588.47 4768.49 2592.44 4804.29 2587.74M4828.57 3110.6C4852.66 3107.44 4878.57 3110 4902.86 3110L5045.71 3110C5183.3 3110 5320.76 3107.94 5457.14 3126.96C5505.34 3133.67 5554.17 3140.51 5601.43 3152.33C5611.79 3154.91 5644.01 3158.49 5645.9 3171.49C5647.66 3183.66 5635.09 3187.41 5625.71 3188.33C5604.2 3190.41 5580.9 3185.29 5560 3180.5C5454.84 3156.41 5339.64 3155.73 5232.86 3169.6C5043.19 3194.23 4848.4 3243.19 4694.29 3361.93C4625.01 3415.3 4556.71 3486.39 4532.04 3572.86C4514.96 3632.7 4515.44 3703.03 4523.27 3764.29C4550.26 3975.81 4724.3 4142.16 4885.71 4263.04C4971.76 4327.47 5061.73 4386.63 5152.86 4443.69C5375.51 4583.07 5603.44 4712.47 5805.71 4881.31C5923.39 4979.54 6034.9 5091.74 6102.49 5231.43C6122.27 5272.31 6135.13 5315.27 6148.17 5358.57C6155.54 5383.03 6165.29 5407.81 6170.27 5432.86C6180.96 5486.49 6177.06 5544.31 6175.73 5598.57C6173.83 5676.61 6157.54 5751.09 6130.46 5824.29C6095.17 5919.64 6037.63 6003.11 5970.24 6078.57C5908.93 6147.24 5837.33 6203.94 5760 6252.99C5750.13 6259.26 5742.61 6268.31 5732.86 6274.71C5706.59 6291.96 5677.34 6306.63 5648.57 6319.17C5605.7 6337.89 5564.01 6359.56 5520 6375.64C5432.56 6407.59 5339.81 6427.83 5248.57 6445.43C5195.23 6455.73 5141.2 6468.24 5087.14 6474.04C4954.24 6488.33 4820.81 6488.57 4687.14 6488.57C4606.23 6488.57 4523.37 6493.13 4442.86 6485.47C4406.54 6482.01 4370.63 6474.16 4334.29 6470.07C4275.1 6463.43 4215.89 6454.43 4157.14 6444.64C4143.74 6442.4 4106.44 6442.21 4101.33 6427.14C4097.37 6415.44 4109.16 6409.74 4118.57 6408.81C4140.99 6406.6 4166.37 6413.21 4188.57 6416.13C4293.7 6429.96 4394.27 6432.9 4500 6424.41C4717.01 6406.97 4945.96 6339.76 5102.86 6182.86C5176.73 6108.99 5235.63 6023.91 5245.61 5917.14C5249.39 5876.63 5249.66 5836.09 5243.67 5795.71C5224.59 5666.71 5146.69 5554.94 5058.63 5462.86C4892.36 5288.99 4675.87 5181.29 4467.14 5068.13C4182.37 4913.76 3892.94 4728.84 3729.4 4440C3707.86 4401.97 3687.76 4363.37 3668.21 4324.29C3659.37 4306.6 3646.31 4287.6 3640.91 4268.57C3634.01 4244.26 3641.04 4212.4 3639.94 4187.14C3636.41 4106.44 3638.57 4025.14 3638.57 3944.29C3638.57 3904.56 3634.76 3860.39 3643.16 3821.43C3650.47 3787.59 3666.19 3754.34 3680.2 3722.86C3714.69 3645.36 3759.91 3572.97 3813.41 3507.14C3914.51 3382.73 4053.77 3302.34 4198.57 3238.37C4274.71 3204.73 4355.16 3182.46 4435.71 3162.33C4508.36 3144.16 4582.57 3126.8 4657.14 3118.81C4693.16 3114.96 4729.53 3112.34 4765.71 3111.44C4786.49 3110.94 4807.94 3113.31 4828.57 3110.6M5448.57 3262.03C5467.16 3259.6 5486.99 3261.43 5505.71 3261.43C5540.96 3261.43 5578.54 3260.93 5612.86 3270.23C5631.77 3275.34 5649.24 3285.17 5667.14 3292.86C5869.44 3379.6 5996.91 3597.63 5969.59 3817.14C5942.21 4037.09 5748 4211.4 5532.86 4238.17C5483.34 4244.33 5426.07 4246.21 5377.14 4235C5341.59 4226.84 5309.49 4210.81 5277.14 4194.64C5162.57 4137.36 5058.94 4035.54 5015.27 3912.86C4995.1 3856.19 4998.57 3792.09 4998.57 3732.86C4998.57 3680.69 5000.49 3623.81 5018.64 3574.29C5069.23 3436.29 5202.93 3313.53 5344.29 3273.47C5378.69 3263.71 5413.7 3266.61 5448.57 3262.03M4204.29 5302.03C4242.27 5297.04 4283.96 5301.69 4321.43 5308.21C4469.01 5333.9 4603.29 5428.7 4672.49 5562.86C4724.4 5663.5 4737.99 5784.91 4717.97 5895.71C4694.96 6023.04 4611.36 6129.11 4507.14 6201.03C4482 6218.39 4459.67 6236.93 4431.43 6249.56C4398.84 6264.13 4360.81 6269.27 4325.71 6273.89C4230.17 6286.44 4125.86 6284.97 4037.14 6243.01C3930.6 6192.63 3835.59 6092.1 3786.7 5985.71C3775.67 5961.71 3763.23 5938.84 3757 5912.86C3748.87 5878.93 3750 5841.81 3750 5807.14C3750 5763.21 3751.4 5717.13 3762.11 5674.29C3791.67 5556.06 3870.39 5447.8 3971.43 5380.74C4042.16 5333.8 4121.3 5312.93 4204.29 5302.03" />
+               </g>
+
+            </svg>
+
          </div>
       </a>
 
@@ -448,34 +705,38 @@
             <div id="part1">
                <div class="n1">
                   <div class="txt"><a class="nava" href="#work-process">Working</a></div>
-                  <hr>
                </div>
-               <div class="n2">
-                  <div class="txt"><a class="nava" href="#tw-service">Services</a></div>
-                  <hr>
+               <div class="n2 dropdown">
+                  <div class="txt"><a class="nava" href="#tw-service">Services <i class="fa fa-caret-down"></i></a>
+                  </div>
+                  <div class="dropdown-content">
+                     <a href="#">Link 1</a>
+                     <a href="#">Link 2</a>
+                     <a href="#">Link 3</a>
+                     <!-- <ul>
+                        <li>AAA</li>
+                        <li>BB</li>
+                        <li>C</li>
+                     </ul> -->
+                  </div>
                </div>
                <div class="n3">
                   <div class="txt"><a class="nava" href="#tw-intro">Problems</a></div>
-                  <hr>
                </div>
                <div class="n1">
                   <div class="txt"><a class="nava" href="#tw-features">Features</a></div>
-                  <hr>
                </div>
             </div>
 
             <div id="part2">
                <div class="n4">
                   <div class="txt"><a class="nava" href="#tw-case">Studies</a></div>
-                  <hr>
                </div>
                <div class="n5">
                   <div class="txt"><a class="nava" href="#tw-pricing">Price</a></div>
-                  <hr>
                </div>
                <div class="n6">
                   <div class="txt"><a class="nava" href="#tw-blog">News</a></div>
-                  <hr>
                </div>
                <div class="n6">
                   <div class="txt"><a class="nava" href="/user/index.html">User</a></div>
@@ -483,7 +744,6 @@
                </div>
                <div class="n6">
                   <div class="txt"><a class="nava" href="#tw-footer">Footer</a></div>
-                  <hr>
                </div>
             </div>
 
@@ -492,56 +752,82 @@
    </header>
    <!-- End of Header area -->
 
-   <div id="section11" data-color="#dee2e6" class="section tw-slider-area owl-carousel gradient-1">
-      <div class="slider-items">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <div class="slider-content">
-                     <h1> Digital <span>Marketing</span> Drives Result </h1>
-                     <p class="slider-desc">Start working with an company that provide every thing you need to
-                        generate
-                        awareness, drive traffic,
-                        connect with customers, and increase.</p>
-                     <a href="#" class="btn btn-primary">Free Analysis</a>
+
+
+
+   <!-- <div id="section11" class="section"> -->
+
+
+
+
+
+   <div id="section11" data-color="#dee2e6" class="section  gradient-1">
+
+      <!-- <div id="splashtag">
+         My testing Text
+      </div> -->
+      <h2 id="splashtag" style="text-align: right;">Welcome Test Here</h2>
+
+      <canvas id="canvasOne" width="900" height="520">
+         Your browser does not support HTML5 canvas.
+      </canvas>
+
+
+
+      <div class="tw-slider-area owl-carousel">
+         <div class="slider-items">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-md-6">
+                     <div class="slider-content">
+                        <h1> Digital <span>Marketing</span> Drives Result </h1>
+                        <p class="slider-desc">Start working with an company that provide every thing you need to
+                           generate
+                           awareness, drive traffic,
+                           connect with customers, and increase.</p>
+                        <a href="#" class="btn btn-primary">Free Analysis</a>
+                     </div>
+                     <!-- Slider Content End -->
                   </div>
-                  <!-- Slider Content End -->
-               </div>
-               <!-- Col End -->
-               <div class="col-md-6">
-                  <img src="images/slider/slider1.png" alt="" class="img-fluid">
-               </div>
-            </div>
-            <!-- Row ENd -->
-         </div>
-         <!-- Container End -->
-      </div>
-      <!-- 1st Slider -->
-      <div class="slider-items">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-md-6">
-                  <img src="images/slider/slider2.png" alt="" class="img-fluid">
-               </div>
-               <div class="col-md-6">
-                  <div class="slider-content slide-text-right">
-                     <h1> Online <span>Marketing</span> Solutions </h1>
-                     <p class="slider-desc">Start working with an company that provide every thing you need to
-                        generate
-                        awareness, drive traffic,
-                        connect with customers, and increase.</p>
-                     <a href="#" class="btn btn-primary">Free Analysis</a>
+                  <!-- Col End -->
+                  <div class="col-md-6">
+                     <img src="images/slider/slider1.png" alt="" class="img-fluid">
                   </div>
-                  <!-- Slider Content End -->
                </div>
-               <!-- Col End -->
+               <!-- Row ENd -->
             </div>
-            <!-- Row ENd -->
+            <!-- Container End -->
          </div>
-         <!-- Container End -->
+         <!-- 1st Slider -->
+         <div class="slider-items">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-md-6">
+                     <img src="images/slider/slider2.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-md-6">
+                     <div class="slider-content slide-text-right">
+                        <h1> Online <span>Marketing</span> Solutions </h1>
+                        <p class="slider-desc">Start working with an company that provide every thing you need to
+                           generate
+                           awareness, drive traffic,
+                           connect with customers, and increase.</p>
+                        <a href="#" class="btn btn-primary">Free Analysis</a>
+                     </div>
+                     <!-- Slider Content End -->
+                  </div>
+                  <!-- Col End -->
+               </div>
+               <!-- Row ENd -->
+            </div>
+            <!-- Container End -->
+         </div>
+         <!-- 1st Slider -->
       </div>
-      <!-- 1st Slider -->
+
    </div>
+   <!-- </div> -->
+
    <!-- Slider Area End -->
 
    <section id="tw-features" data-color="#00ff89" class="section tw-features-area gradient-2">
@@ -1327,113 +1613,83 @@
    <!-- Javascripts File
       =============================================================================-->
 
-   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-   <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
-
-   <!-- <script src="js/slideNav.js"></script> -->
-
-   <!-- <script>
-      window.slide = new SlideNav({
-         changeHash: true
-      });
-   </script> -->
-
-   <!-- <script>
-      const gra = function (min, max) {
-         return Math.random() * (max - min) + min;
-      }
-      const init = function () {
-         let items = document.querySelectorAll('section');
-         for (let i = 0; i < items.length; i++) {
-            items[i].style.background = randomColor({ luminosity: 'light' });
-         }
-         cssScrollSnapPolyfill()
-      }
-      init();
-   </script> -->
 
    <!-- initialize jQuery Library -->
    <script src="js/jquery-2.0.0.min.js"></script>
    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
 
-   <!-- Popper JS -->
-   <!-- <script src="js/popper.min.js"></script> -->
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js"
-      integrity="sha256-FT/LokHAO3u6YAZv6/EKb7f2e0wXY3Ff/9Ww5NzT+Bk=" crossorigin="anonymous"></script> -->
-
    <!-- Bootstrap jQuery -->
-   <!-- <script src="js/bootstrap.min.js"></script> -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha256-OFRAJNoaD8L3Br5lglV7VyLRf0itmoBzWUoM+Sji4/8=" crossorigin="anonymous"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha256-OFRAJNoaD8L3Br5lglV7VyLRf0itmoBzWUoM+Sji4/8=" crossorigin="anonymous"></script> -->
 
    <!-- Owl Carousel -->
    <script src="js/owl-carousel.2.3.0.min.js"></script>
 
-   <!-- Waypoint -->
-   <!-- <script src="js/waypoints.min.js"></script> -->
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-      integrity="sha256-w49DIDk8itgSjjuoof5lTxYKwcjWJ7Z2sRW3nU1StNA=" crossorigin="anonymous"></script> -->
+   <!-- <script src="js/smoothscroll/smooth-scroll.polyfills.min.js"></script>
+   <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+   </script> -->
 
-   <!-- Counter Up -->
-   <!-- <script src="js/jquery.counterup.min.js"></script> -->
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
-      integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script> -->
-
-   <!-- Video Popup -->
-   <!-- <script src="js/jquery.magnific.popup.js"></script> -->
-
-   <!-- Smooth scroll -->
-   <!-- <script src="js/smoothscroll.js"></script> -->
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js"
-      integrity="sha256-IylDNWjip7FK2TJUYck237qBTBeSiwnSFDCjLG686D4=" crossorigin="anonymous"></script> -->
-
-   <!-- WoW js -->
-   <!-- <script src="js/wow.min.js"></script> -->
-   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-      integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script> -->
 
    <!-- Template Custom -->
    <script src="js/main.js"></script>
    <script src="js/color.js"></script>
 
-   <!-- <script>
-      function myFunction() {
-         var x = document.getElementById("mymenu");
-         if (x.className === "nav") {
-            x.className += " responsive";
-         } else {
-            x.className = "nav";
-         }
-      }
-   </script> -->
+   <script src="js/sprear/modernizr-2.0.6.js"></script>
+   <script src="js/sprear/main.js"></script>
 
-   <!-- <script>
-      $(document).ready(function () {
-         // Add smooth scrolling to all links
-         $("a").on('click', function (event) {
+   <script>
+      $(window).load(function () {
+         var $word2 = $("#canvasOne");
+         // var $word1 = $("#test22");
+         var $word3 = $(".slider-items");
 
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-               // Prevent default anchor click behavior
-               event.preventDefault();
+         // $word2.fadeIn(2000, function () {
+         //    $word3.delay(8000).fadeIn(2000, function () {
+         //       $("#splashtag").fadeOut(2000);
+         //       $word2.fadeOut(2000);
+         //    });
+         // });
 
-               // Store hash
-               var hash = this.hash;
-
-               // Using jQuery's animate() method to add smooth page scroll
-               // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-               $('html').animate({
-                  scrollTop: $(hash).offset().top
-               }, 800, function () {
-
-                  // Add hash (#) to URL when done scrolling (default click behavior)
-                  window.location.hash = hash;
-               });
-            } // End if
+         $("#canvasOne").fadeIn(2000, function () {
+            $("#splashtag").delay(6000).fadeOut(2000);
+            $("#canvasOne").delay(5000).fadeOut(2000);
+            $(".slider-items").delay(7000).fadeIn(2000);
          });
+
       });
-   </script> -->
+   </script>
+
+   <script>
+      window.onload = function () {
+         var path = document.querySelector('path');
+         var length = path.getTotalLength();
+
+         // Clear any previous transition
+         path.style.transition = path.style.WebkitTransition =
+            'none';
+
+         // Set up the starting positions
+         path.style.strokeDasharray = length + ' ' + length;
+         path.style.strokeDashoffset = length;
+
+         // Trigger a layout so styles are calculated & the browser 
+         // picks up the starting position before animating
+         path.getBoundingClientRect();
+
+         // Define our transition
+         path.style.transition = path.style.WebkitTransition =
+            'stroke-dashoffset 7s ease-in-out';
+
+         // Go!
+         path.style.strokeDashoffset = '0';
+      };
+   </script>
+
+   <script src="js/animation_text/SplitText.min.js"></script>
+   <script src="js/animation_text/TweenMax.min.js"></script>
+   <script src="js/animation_text/text_ani.js"></script>
 
 </body>
 
