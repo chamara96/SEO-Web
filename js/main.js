@@ -33,35 +33,37 @@ $(function ($) {
    "use strict";
 
    $(window).on('load', function () {
-      menuFixed();
+      // menuFixed();
+      console.log("Windows on Load DONE");
    });
 
    /* Navbar fixed */
 
-   function menuFixed() {
-      var wWidth = $(window).width();
-      if (wWidth > 974) {
-         $(window).on('scroll', function () {
-            if ($(window).scrollTop() > 400) {
-               $('.tw-head, .tw-header').addClass('navbar-fixed');
-            } else {
-               $('.tw-head, .tw-header').removeClass('navbar-fixed');
-            }
-            if ($(window).scrollTop() < 400) {
-               setTimeout(() => {
-                  $('header').removeClass('off-canvas');
-               }, 0);
-            } else {
-               setTimeout(() => {
-                  $('header').addClass('off-canvas');
-               }, 0);
-            }
-         });
-      }
-   }
-   $(document).on('scroll', function () {
-      menuFixed();
-   });
+   // function menuFixed() {
+   //    var wWidth = $(window).width();
+   //    if (wWidth > 974) {
+   //       $(window).on('scroll', function () {
+   //          if ($(window).scrollTop() > 400) {
+   //             $('.tw-head, .tw-header').addClass('navbar-fixed');
+   //          } else {
+   //             $('.tw-head, .tw-header').removeClass('navbar-fixed');
+   //          }
+   //          if ($(window).scrollTop() < 400) {
+   //             setTimeout(() => {
+   //                $('header').removeClass('off-canvas');
+   //             }, 0);
+   //          } else {
+   //             setTimeout(() => {
+   //                $('header').addClass('off-canvas');
+   //             }, 0);
+   //          }
+   //       });
+   //    }
+   // }
+
+   // $(document).on('scroll', function () {
+   //    menuFixed();
+   // });
 
    /* Menu Active link*/
    $('.nav-item').on('click', function () {
@@ -69,29 +71,55 @@ $(function ($) {
       $(this).addClass('active');
    });
    /* DropDown Menu */
-  $("li.nav-item a").on("click", function () {
+   $("li.nav-item a").on("click", function () {
       $(this).parent("li").find(".dropdown-menu").slideToggle();
-      // $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
+      $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
    });
-   /*Main Slideshow*/
-   $(".tw-slider-area").owlCarousel({
-      items: 1,
-      loop: true,
-      autoplay: true,
-      nav: true,
-      dots: false,
-      autoplayTimeout: 8000,
-      autoplayHoverPause: true,
-      mouseDrag: false,
-      touchDrag:true,
-      smartSpeed: 1100,
-      navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
-      responsive: {
-         1024: {
-            mouseDrag: true,
+
+   setTimeout(() => {
+
+      $(".tw-slider-area").owlCarousel({
+         items: 1,
+         loop: true,
+         autoplay: true,
+         // nav: false,//true
+         // dots: true,
+         // dotsEach:true,
+         autoplayTimeout: 8000,
+         autoplayHoverPause: false,
+         mouseDrag: false,
+         touchDrag: true,
+         smartSpeed: 1100,
+         // navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
+         responsive: {
+            1024: {
+               mouseDrag: true,
+            }
          }
-      }
-   });
+      });
+
+
+   }, 9500);
+   /*Main Slideshow*/
+   // $(".tw-slider-area").owlCarousel({
+   //    items: 1,
+   //    loop: true,
+   //    autoplay: true,
+   //    // nav: false,//true
+   //    // dots: true,
+   //    // dotsEach:true,
+   //    autoplayTimeout: 8000,
+   //    autoplayHoverPause: false,
+   //    mouseDrag: false,
+   //    touchDrag: true,
+   //    smartSpeed: 1100,
+   //    // navText: ['<i class="icon icon-left-arrow2">', '<i class="icon icon-right-arrow2">'],
+   //    responsive: {
+   //       1024: {
+   //          mouseDrag: true,
+   //       }
+   //    }
+   // });
 
    /*Testimonial Slider*/
    $(".tw-testimonial-carousel").owlCarousel({
@@ -164,10 +192,10 @@ $(function ($) {
 
 
    /* Counter UP */
-   $(".counter").counterUp({
-      delay: 10,
-      time: 2000
-   });
+   // $(".counter").counterUp({
+   //    delay: 10,
+   //    time: 2000
+   // });
 
    /* Client carousel */
    $(".clients-carousel").owlCarousel({
@@ -206,16 +234,16 @@ $(function ($) {
    });
 
    /* Video Popup */
-   if ($('.video-popup').length > 0) {
-      $('.video-popup').magnificPopup({
-         disableOn: 700,
-         type: 'iframe',
-         mainClass: 'mfp-fade',
-         removalDelay: 160,
-         preloader: false,
-         fixedContentPos: false
-      });
-   };
+   // if ($('.video-popup').length > 0) {
+   //    $('.video-popup').magnificPopup({
+   //       disableOn: 700,
+   //       type: 'iframe',
+   //       mainClass: 'mfp-fade',
+   //       removalDelay: 160,
+   //       preloader: false,
+   //       fixedContentPos: false
+   //    });
+   // };
 
    /* Our Mission Carousel */
    $('.mission-carousel').owlCarousel({
@@ -231,173 +259,173 @@ $(function ($) {
    });
 
    /* Map */
-   if ($('#map').length > 0) {
+   // if ($('#map').length > 0) {
 
-      var contactmap = {
-         lat: -37.816218,
-         lng: 144.964068
-      };
+   //    var contactmap = {
+   //       lat: -37.816218,
+   //       lng: 144.964068
+   //    };
 
-      $('#map')
-         .gmap3({
-            zoom: 12,
-            center: contactmap,
-            scrollwheel: false,
-            mapTypeId: "shadeOfGrey",
-            mapTypeControlOptions: {
-               mapTypeIds: [google.maps.MapTypeId.ROADMAP, "shadeOfGrey"]
-            }
-         })
+   //    $('#map')
+   //       .gmap3({
+   //          zoom: 12,
+   //          center: contactmap,
+   //          scrollwheel: false,
+   //          mapTypeId: "shadeOfGrey",
+   //          mapTypeControlOptions: {
+   //             mapTypeIds: [google.maps.MapTypeId.ROADMAP, "shadeOfGrey"]
+   //          }
+   //       })
 
-         .styledmaptype(
-            "shadeOfGrey", [
+   //       .styledmaptype(
+   //          "shadeOfGrey", [
 
-               {
-                  "featureType": "administrative",
-                  "elementType": "geometry.stroke",
-                  "stylers": [{
-                     "color": "#E4E4E4"
-                  }, {
-                     "lightness": 17
-                  }, {
-                     "weight": 1.2
-                  }]
-               },
-               {
-                  "featureType": "administrative",
-                  "elementType": "geometry.fill",
-                  "stylers": [{
-                     "color": "#E4E4E4"
-                  }, {
-                     "lightness": 20
-                  }]
-               },
-               {
-                  "featureType": "transit",
-                  "elementType": "geometry",
-                  "stylers": [{
-                     "color": "#E4E4E4"
-                  }, {
-                     "lightness": 19
-                  }]
-               },
-               {
-                  "featureType": "all",
-                  "elementType": "labels.icon",
-                  "stylers": [{
-                     "visibility": "off"
-                  }]
-               },
-               {
-                  "featureType": "all",
-                  "elementType": "labels.text.fill",
-                  "stylers": [{
-                     "saturation": 36
-                  }, {
-                     "color": "#333333"
-                  }, {
-                     "lightness": 40
-                  }]
-               },
-               {
-                  "featureType": "all",
-                  "elementType": "labels.text.stroke",
-                  "stylers": [{
-                     "visibility": "on"
-                  }, {
-                     "color": "#ffffff"
-                  }, {
-                     "lightness": 16
-                  }]
-               },
-               {
-                  "featureType": "poi",
-                  "elementType": "geometry",
-                  "stylers": [{
-                     "color": "#E4E4E4"
-                  }, {
-                     "lightness": 21
-                  }]
-               },
-               {
-                  "featureType": "road.local",
-                  "elementType": "geometry",
-                  "stylers": [{
-                     "color": "#ffffff"
-                  }, {
-                     "lightness": 16
-                  }]
-               },
-               {
-                  "featureType": "road.arterial",
-                  "elementType": "geometry",
-                  "stylers": [{
-                     "color": "#E4E4E4"
-                  }, {
-                     "lightness": 18
-                  }]
-               },
-               {
-                  "featureType": "road.highway",
-                  "elementType": "geometry.stroke",
-                  "stylers": [{
-                     "color": "#ffffff"
-                  }, {
-                     "lightness": 29
-                  }, {
-                     "weight": 0.2
-                  }]
-               },
-               {
-                  "featureType": "road.highway",
-                  "elementType": "geometry.fill",
-                  "stylers": [{
-                     "color": "#ffffff"
-                  }, {
-                     "lightness": 17
-                  }]
-               },
-               {
-                  "featureType": "landscape",
-                  "elementType": "geometry",
-                  "stylers": [{
-                     "color": "#E5E5E5"
-                  }, {
-                     "lightness": 20
-                  }]
-               },
-               {
-                  "featureType": "water",
-                  "elementType": "geometry",
-                  "stylers": [{
-                     "color": "#C3C3C3"
-                  }, {
-                     "lightness": 17
-                  }]
-               }
-            ], {
-               name: "HQ"
-            }
-         )
+   //             {
+   //                "featureType": "administrative",
+   //                "elementType": "geometry.stroke",
+   //                "stylers": [{
+   //                   "color": "#E4E4E4"
+   //                }, {
+   //                   "lightness": 17
+   //                }, {
+   //                   "weight": 1.2
+   //                }]
+   //             },
+   //             {
+   //                "featureType": "administrative",
+   //                "elementType": "geometry.fill",
+   //                "stylers": [{
+   //                   "color": "#E4E4E4"
+   //                }, {
+   //                   "lightness": 20
+   //                }]
+   //             },
+   //             {
+   //                "featureType": "transit",
+   //                "elementType": "geometry",
+   //                "stylers": [{
+   //                   "color": "#E4E4E4"
+   //                }, {
+   //                   "lightness": 19
+   //                }]
+   //             },
+   //             {
+   //                "featureType": "all",
+   //                "elementType": "labels.icon",
+   //                "stylers": [{
+   //                   "visibility": "off"
+   //                }]
+   //             },
+   //             {
+   //                "featureType": "all",
+   //                "elementType": "labels.text.fill",
+   //                "stylers": [{
+   //                   "saturation": 36
+   //                }, {
+   //                   "color": "#333333"
+   //                }, {
+   //                   "lightness": 40
+   //                }]
+   //             },
+   //             {
+   //                "featureType": "all",
+   //                "elementType": "labels.text.stroke",
+   //                "stylers": [{
+   //                   "visibility": "on"
+   //                }, {
+   //                   "color": "#ffffff"
+   //                }, {
+   //                   "lightness": 16
+   //                }]
+   //             },
+   //             {
+   //                "featureType": "poi",
+   //                "elementType": "geometry",
+   //                "stylers": [{
+   //                   "color": "#E4E4E4"
+   //                }, {
+   //                   "lightness": 21
+   //                }]
+   //             },
+   //             {
+   //                "featureType": "road.local",
+   //                "elementType": "geometry",
+   //                "stylers": [{
+   //                   "color": "#ffffff"
+   //                }, {
+   //                   "lightness": 16
+   //                }]
+   //             },
+   //             {
+   //                "featureType": "road.arterial",
+   //                "elementType": "geometry",
+   //                "stylers": [{
+   //                   "color": "#E4E4E4"
+   //                }, {
+   //                   "lightness": 18
+   //                }]
+   //             },
+   //             {
+   //                "featureType": "road.highway",
+   //                "elementType": "geometry.stroke",
+   //                "stylers": [{
+   //                   "color": "#ffffff"
+   //                }, {
+   //                   "lightness": 29
+   //                }, {
+   //                   "weight": 0.2
+   //                }]
+   //             },
+   //             {
+   //                "featureType": "road.highway",
+   //                "elementType": "geometry.fill",
+   //                "stylers": [{
+   //                   "color": "#ffffff"
+   //                }, {
+   //                   "lightness": 17
+   //                }]
+   //             },
+   //             {
+   //                "featureType": "landscape",
+   //                "elementType": "geometry",
+   //                "stylers": [{
+   //                   "color": "#E5E5E5"
+   //                }, {
+   //                   "lightness": 20
+   //                }]
+   //             },
+   //             {
+   //                "featureType": "water",
+   //                "elementType": "geometry",
+   //                "stylers": [{
+   //                   "color": "#C3C3C3"
+   //                }, {
+   //                   "lightness": 17
+   //                }]
+   //             }
+   //          ], {
+   //             name: "HQ"
+   //          }
+   //       )
 
-         .marker({
-            position: contactmap,
-            icon: './images/icon/map_marker.png'
-         })
+   //       .marker({
+   //          position: contactmap,
+   //          icon: './images/icon/map_marker.png'
+   //       })
 
-         .infowindow({
-            position: contactmap,
-            content: "16122 Collins Street West. Victoria"
-         })
+   //       .infowindow({
+   //          position: contactmap,
+   //          content: "16122 Collins Street West. Victoria"
+   //       })
 
-         .then(function (infowindow) {
-            var map = this.get(0);
-            var marker = this.get(1);
-            marker.addListener('click', function () {
-               infowindow.open(map, marker);
-            });
-         });
-   };
+   //       .then(function (infowindow) {
+   //          var map = this.get(0);
+   //          var marker = this.get(1);
+   //          marker.addListener('click', function () {
+   //             infowindow.open(map, marker);
+   //          });
+   //       });
+   // };
 
    /* Contact Form */
    $('#contact-form').submit(function () {
@@ -416,12 +444,12 @@ $(function ($) {
             $message = $form.find('.form-message');
 
          $.post(action, {
-               name: $name.val(),
-               phone: $phone.val(),
-               email: $email.val(),
-               subject: $subject.val(),
-               message: $message.val()
-            },
+            name: $name.val(),
+            phone: $phone.val(),
+            email: $email.val(),
+            subject: $subject.val(),
+            message: $message.val()
+         },
             function (data) {
                $error.html(data);
                $error.slideDown('slow');
@@ -500,7 +528,7 @@ $(function ($) {
    });
 
    /* Wow Initialize */
-   new WOW().init();
+   // new WOW().init();
 
    /* Accordion */
    function toggleIcon(e) {
