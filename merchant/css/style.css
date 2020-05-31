@@ -246,6 +246,11 @@ section {
   position: relative;
 }
 
+section-client {
+  padding: 25px 0;
+  position: relative;
+}
+
 /* Section Heading */
 .section-heading {
   margin-bottom: 80px;

@@ -11,10 +11,12 @@
      
      .slick-slide img {
          width: 100%;
+         padding: 20px;
      }
      
      .slick-slider
      {
+        /* transition: transform 1s; */
          position: relative;
          display: block;
          box-sizing: border-box;
@@ -26,7 +28,7 @@
          -khtml-user-select: none;
          -ms-touch-action: pan-y;
              touch-action: pan-y;
-         -webkit-tap-highlight-color: transparent;
+         -webkit-tap-highlight-color: trasparent;
      }
      
      .slick-list
@@ -56,6 +58,8 @@
               -o-transform: translate3d(0, 0, 0);
                  transform: translate3d(0, 0, 0);
      }
+
+     
      
      .slick-track
      {
@@ -118,4 +122,45 @@
      }
      .slick-arrow.slick-hidden {
          display: none;
-     }   
+     } 
+     
+    /* .slick-prev {
+        position: relative;
+        float: left;
+      
+       color: rgb(3, 2, 2);
+       font-size: 30px;
+       
+     }
+
+     .slick-next {
+         display: flexbox;
+         box-shadow: brown;
+        position: relative;
+        float: right;
+        background-color: blue;
+      
+       color: rgb(3, 2, 2);
+       font-size: 30px;
+       
+     } */
+
+     /* .slick-prev:before {
+         position: relative;
+         float: left;
+        content: "<";
+        color: red;
+        font-size: 30px;
+        
+      }
+
+      
+
+      
+      .slick-next:before {
+        position: relative;
+        float: right;
+        content: ">";
+        color: red;
+        font-size: 30px;
+      } */ 
