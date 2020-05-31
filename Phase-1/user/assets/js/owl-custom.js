@@ -93,4 +93,15 @@ $(document).ready(function () {
 
     });*/
 
+    var owl2 = $('#option-slideshow');
+    owl2.owlCarousel({
+        autoplay: true,
+        autoPlayTimeout: 6000,
+        smartSpeed: 400,
+        autoplayHoverPause: true,
+        items: 1,
+        loop: true,
+
+    });
+
 });
