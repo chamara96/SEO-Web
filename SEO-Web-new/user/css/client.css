@@ -6,11 +6,16 @@
      /* Slider */
      
      .slick-slide {
-         margin: 0px 20px;
+         margin:0px 20px;
      }
+
+     /*.slick-slide a {
+        margin:10px 20px;
+    }*/
      
      .slick-slide img {
          width: 100%;
+         padding: 20px;
      }
      
      .slick-slider
@@ -34,8 +39,8 @@
          position: relative;
          display: block;
          overflow: hidden;
-         margin: 0;
-         padding: 0;
+         margin:0px;
+         padding: 0px;
      }
      .slick-list:focus
      {
