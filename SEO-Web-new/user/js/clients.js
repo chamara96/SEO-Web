@@ -85,7 +85,7 @@ $(document).ready(function () {
                         </div>
                         <!-- End Entry Content -->
                         <a href="#" class="tw-readmore">Read More
-                            <i class="fa fa-angle-right"></i>
+                            <!--i class="fa fa-angle-right"></i-->
                         </a>
                     </div>
                     <!-- End Post info -->
