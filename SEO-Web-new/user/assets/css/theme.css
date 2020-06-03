@@ -123,7 +123,7 @@
 .device-holder {
     position: relative;
     width: 370px;
-    height: 650px;
+    height: 680px;
     max-width: 100%;
     margin: 0 auto
 }
@@ -149,7 +149,7 @@
     position: absolute;
     text-align: center;
     width: 237px;
-    top: 17px;
+    top: 25px;
     left: 0px
 }
 
@@ -455,12 +455,18 @@
 
     .device-holder {
         
-        background-image: none !important;
+        /*background-image: none !important;*/
         width: 240px;
         height: 480px;
         display: inline-block;
         text-align: center;
         margin-bottom: 30px
+    }
+
+    .device-holder.iphone-x-holder .device-holder-inner {
+        left: 39px;
+        width: 162px;
+        top: 20px
     }
 
     .device-holder.iphone-holder .device-holder-inner {
@@ -529,7 +535,7 @@
     .device-holder.iphone-x-holder .device-holder-inner {
         left: 53px;
         width: 224px;
-        top: 19px
+        top: 23px
     }
 
     .device-holder.android-holder .device-holder-inner {
@@ -569,7 +575,7 @@
     .device-holder.iphone-x-holder .device-holder-inner {
         left: 46px;
         width: 197px;
-        top: 14px
+        top: 17px
     }
 
     .device-holder.android-holder .device-holder-inner {
